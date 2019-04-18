@@ -1,0 +1,26 @@
+/*
+Theme Name:  GBEF
+Template:    Divi
+Author:      Yury
+Version:     1.0.0
+*/
+
+@import url("../Divi/style.css");
+
+
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+
+@import "vendor/slick";
+
+
+@import "layout/fonts";
+@import "layout/common";
+@import "layout/partials";
+@import "layout/buttons";
+@import "layout/navbar";
+@import "layout/forms";
+@import "layout/footer";
+
+@import "pages/home";
