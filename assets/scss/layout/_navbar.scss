@@ -34,13 +34,9 @@
       float: none;
       padding-left: 0 !important;
 
-      ul {
-        white-space: nowrap;
-      }
+      ul {white-space: nowrap;}
       li {
-        @media screen and (max-width: 1300px) {
-          padding-right: 1.2rem;
-        }
+        @media screen and (max-width: 1300px) {padding-right: 1.2rem;}
       }
       .current-menu-item {
         a:after {
@@ -50,19 +46,13 @@
           left: 0;
           position: absolute;
           width: 100%;
-          @media screen and (min-width: 981px) {
-            content: '';
-          }
+          @media screen and (min-width: 981px) {content: '';}
         }
       }
       #top-menu a {
         padding-bottom: 40px;
-        @media screen and (max-width: 1450px) {
-          font-size: 1.6rem;
-        }
-        @media screen and (max-width: 1200px) {
-          font-size: 1.5rem;
-        }
+        @media screen and (max-width: 1450px) {font-size: 1.6rem;}
+        @media screen and (max-width: 1200px) {font-size: 1.5rem;}
       }
 
       .mobile {
@@ -95,27 +85,38 @@
     margin-right: -4rem;
     padding: 0 2.5rem;
     @media screen and (max-width: 980px) {display: none;}
-    ul {
-      white-space: nowrap;
-    }
+    ul {white-space: nowrap;}
     li {
       display: inline-block;
+      padding: 0 1.7rem;
+      @media screen and (max-width: 1300px) {padding: 0 .6rem;}
     }
     a {
       color: #fff;
       font-size: 1.8rem;
-      padding: 0 1.7rem;
+      display: block;
+      line-height: 8.8rem;
+      position: relative;
       &:hover {color: $black;}
-      @media screen and (max-width: 1450px) {
-        font-size: 1.5rem;
+      @media screen and (max-width: 1450px) {font-size: 1.5rem;}
+      @media screen and (max-width: 1300px) {font-size: 1.4rem;}
+      &:after {
+        background: #000;
+        bottom: 1rem;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100%;
       }
-      @media screen and (max-width: 1300px) {
-        padding: 0 .6rem;
-      }
-      @media screen and (max-width: 1300px) {
-        font-size: 1.4rem;
-      }
-    }
+    }//a
+
   }//.top-right
 
 }//#main-header
+
+.contact .top-right li:last-child a:after {
+  @media screen and (min-width: 981px) {content: '';}
+}
+.login .top-right li:first-child a:after {
+  @media screen and (min-width: 981px) {content: '';}
+}

@@ -1,0 +1,96 @@
+.section-contact {
+  background-position: 35px 160px !important;
+  padding-top: 0 !important;
+  @media screen and (min-width: 981px) {
+    padding-bottom: 16.6rem !important;
+  }
+
+
+  .et_pb_row {
+    padding-bottom: 1.5rem;
+    padding-top: 0;
+    @media screen and (max-width: 480px) {
+      width: 90%;
+    }
+  }
+
+  .et_pb_column {
+    @media screen and (min-width: 981px) {
+      align-items: center;
+      display: flex;
+    }
+
+    .et_pb_contact_form_container {
+      background: $yellow;
+      height: 67rem;
+      margin-bottom: 0;
+      max-width: 52rem;
+      padding: 10rem 3.8% 5.5rem;
+      position: relative;
+      @media screen and (max-width: 980px) {
+        margin: auto;
+      }
+      &:before {
+        background: #000;
+        bottom: 0;
+        content: '';
+        height: 46.2rem;
+        left: -1.1rem;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        width: 1.1rem;
+        @media screen and (max-width: 980px) {
+          content: none;
+        }
+      }
+
+      .et_pb_contact_main_title {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+        text-transform: none;
+      }
+
+      .et_contact_bottom_container {
+        float: none;
+        margin: 3rem 0 0;
+        padding-left: 3%;
+        text-align: center;
+        .et_pb_button {
+          margin: 0;
+          width: 100%;
+          &:hover {
+            color: #fff !important;
+            border-color: #fff !important;
+          }
+        }
+      }//.et_contact_bottom_container
+
+      .input {
+        background: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        padding: 7px 5px;
+        @include placeholder {color: #fff;}
+        &.et_pb_contact_message {min-height: 9rem;}
+      }//.input
+
+      .et-pb-contact-message {
+        color: red;
+      }
+
+    }//.et_pb_contact_form_container
+
+    .et_pb_image img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }//.et_pb_column
+
+}//.section-contact

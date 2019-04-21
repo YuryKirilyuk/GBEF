@@ -27,3 +27,23 @@
     width: 38px;
   }
 }//.et_pb_button
+
+.button {
+  @extend .et_pb_button;
+  border: 2px solid #000;
+  display: inline-block;
+  height: 7.4rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  line-height: 7.4rem;
+  margin-top: 5.5rem;
+  padding: 0 3rem;
+  position: relative;
+  &:after {
+    background: $yellow;
+  }
+  &:hover {
+    border-color: $yellow;
+  }
+}

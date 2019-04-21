@@ -12,7 +12,7 @@ jQuery(window).on('load', function () {
    When the window is scrolled, do
    ========================================================================== */
 
-jQuery(window).scroll(function() {
+    jQuery(window).scroll(function() {
 	
 		
 	});
@@ -21,26 +21,13 @@ jQuery(window).scroll(function() {
    When the window is resized, do
    ========================================================================== */
 
-jQuery(window).resize(function() {
+    jQuery(window).resize(function() {
 		
 		
 	});
 
 
 
-
-/* viewport width */
-function viewport(){
-	var e = window, 
-		a = 'inner';
-	if ( !( 'innerWidth' in window ) )
-	{
-		a = 'client';
-		e = document.documentElement || document.body;
-	}
-	return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
-};
-/* viewport width */
 jQuery(function(){
 	/* placeholder*/
     jQuery('input, textarea').each(function(){
@@ -110,38 +97,17 @@ jQuery(function(){
 
 
 
+    jQuery('#tabs').on('click', '.et_pb_module', function () {
+        var $el = jQuery(this),
+            id = $el.attr('id');
+
+        $el.addClass('active').parent().siblings().find('.et_pb_module').removeClass('active');
+
+        jQuery('#tabs-content').find('.et_pb_module ').removeClass('active');
+        jQuery('#' + id + '-content').addClass('active');
+
+    });
 
 
-
-
-
-
-
-
-	/*
-	
-	if($('.styled').length) {
-		$('.styled').styler();
-	};
-	if($('.fancybox').length) {
-		$('.fancybox').fancybox({
-			margin  : 10,
-			padding  : 10
-		});
-	};
-	if($('.scroll').length) {
-		$(".scroll").mCustomScrollbar({
-			axis:"x",
-			theme:"dark-thin",
-			autoExpandScrollbar:true,
-			advanced:{autoExpandHorizontalScroll:true}
-		});
-	};
-	
-	*/
-	
-	/* components */
-	
-	
 
 });
