@@ -505,6 +505,10 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 980px) { .page-title h1 { font-size: 4rem !important; } }
 
+.section-text { font-size: 2rem; font-weight: 300; line-height: 1.4; }
+
+@media screen and (max-width: 580px) { .section-text { font-size: 1.8rem; } }
+
 .et_pb_button, .button { min-width: 20.5rem; }
 
 @media screen and (max-width: 1100px) { .et_pb_button, .button { letter-spacing: 2px !important; } }
@@ -1134,5 +1138,76 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 #tabs-content .et_pb_module ul li { list-style: none; margin-bottom: 1rem; padding-left: 1.2rem; position: relative; }
 
 #tabs-content .et_pb_module ul li:before { background: #ddbb58; border-radius: 50%; content: ''; height: 7px; left: -1.5rem; position: absolute; top: 7px; width: 7px; }
+
+.section-header-text_about { background: #e0e0e1 url(assets/img/bg_about_hero_text.jpg) no-repeat right bottom; font-size: 2rem; font-weight: 300; line-height: 1.4; padding-bottom: 2rem !important; }
+
+@media screen and (max-width: 580px) { .section-header-text_about { font-size: 1.8rem; } }
+
+.section-header-text_about .et_pb_column:first-child { font-size: 3rem; font-weight: 400; line-height: 1.16; }
+
+@media screen and (max-width: 580px) { .section-header-text_about .et_pb_column:first-child { font-size: 2.2rem; } }
+
+.section-header-text_about + .section-text { background: url(assets/img/bg_about_text1.jpg) no-repeat right top; }
+
+.section-registration { background: #ddbb58; color: #050301; font-size: 3rem; line-height: normal; padding: 0 !important; }
+
+@media screen and (max-width: 1390px) { .section-registration { font-size: 2.5rem; } }
+
+@media screen and (max-width: 1150px) and (min-width: 981px) { .section-registration { font-size: 2rem; } }
+
+@media screen and (max-width: 580px) { .section-registration { font-size: 1.8rem; } }
+
+.section-registration .et_pb_row { padding: 0 !important; }
+
+@media screen and (min-width: 981px) { .section-registration .et_pb_row { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; max-width: 100%; width: 100%; }
+  .section-registration .et_pb_row:after { content: none; } }
+
+.section-registration .et_pb_column:first-child { padding-bottom: 3rem; padding-top: 6.5rem; }
+
+@media screen and (min-width: 981px) { .section-registration .et_pb_column:first-child { max-width: 65rem; margin-right: 1%; margin-left: 10%; width: 40%; } }
+
+.section-registration .date { color: #050301; font-size: 3.3rem; font-weight: 500; margin-bottom: 3rem; }
+
+@media screen and (max-width: 1390px) { .section-registration .date { font-size: 2.8rem; } }
+
+@media screen and (max-width: 1150px) and (min-width: 981px) { .section-registration .date { font-size: 2rem; } }
+
+@media screen and (max-width: 580px) { .section-registration .date { font-size: 1.8rem; } }
+
+.section-registration h4 { font-size: 5rem; font-weight: 700; margin-bottom: 1.5rem; position: relative; }
+
+@media screen and (max-width: 1390px) { .section-registration h4 { font-size: 4rem; } }
+
+@media screen and (max-width: 1150px) and (min-width: 981px) { .section-registration h4 { font-size: 3rem; } }
+
+@media screen and (max-width: 768px) { .section-registration h4 { margin-bottom: 5rem; text-align: center; } }
+
+@media screen and (max-width: 580px) { .section-registration h4 { font-size: 2.5rem; } }
+
+.section-registration h4:before { background: #000; bottom: 0; content: ''; height: 7px; margin: auto; right: 100%; position: absolute; top: 0; -webkit-transform: translateX(-5rem); -ms-transform: translateX(-5rem); transform: translateX(-5rem); width: 224px; }
+
+@media screen and (max-width: 767px) { .section-registration h4:before { bottom: -1.5rem; left: 0; right: 0; top: auto; -webkit-transform: none; -ms-transform: none; transform: none; } }
+
+.section-registration .et_pb_button_module_wrapper { margin-top: 4.5rem; }
+
+.section-registration .et_pb_button, .section-registration .button { color: #fff !important; font-weight: 500; height: 7.5rem; line-height: 6rem !important; max-width: 45.5rem; text-align: center; width: 100%; }
+
+@media screen and (max-width: 580px) { .section-registration .et_pb_button, .section-registration .button { height: 6.5rem; line-height: 5rem !important; } }
+
+.section-registration .et_pb_button:hover, .section-registration .button:hover { border-color: #fff !important; color: #fff !important; }
+
+@media screen and (min-width: 981px) { .section-registration .et_pb_column:last-child { min-width: 58rem; width: 49%; } }
+
+@media screen and (max-width: 768px) { .section-registration .et_pb_column:last-child { min-width: unset !important; } }
+
+.section-registration .et_pb_column:last-child .et_pb_image { height: 100%; }
+
+.section-registration .et_pb_column:last-child .et_pb_image_wrap { display: block; height: 100%; }
+
+.section-registration .et_pb_column:last-child img { -o-object-fit: cover; object-fit: cover; height: 100%; max-height: 50.5rem; width: 100%; }
+
+@media screen and (max-width: 1490px) and (min-width: 981px) { .section-registration .et_pb_column:last-child img { -o-object-position: 18%; object-position: 18%; } }
+
+.section-registration + .section-text { background: url(assets/img/bg_about_text2.jpg) no-repeat left top; padding: 4.5rem 0 5.5rem !important; }
 
 /*# sourceMappingURL=style.css.map */
