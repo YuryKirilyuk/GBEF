@@ -55,8 +55,29 @@ h2.section-title {
 }
 
 .page-title {
+  padding: 0 !important;
   @media screen and (min-width: 981px) {
     height: 235px;
+  }
+
+  .et_pb_row {
+    height: 100%;
+    padding: 0;
+    .et_pb_column,
+    .et_pb_module {
+      height: 100%;
+    }
+    .et_pb_module {
+      max-width: 1300px;
+      margin: auto;
+      width: 80%;
+      @media screen and (min-width: 981px) {
+        padding-top: 11.5rem;
+      }
+      @media screen and (max-width: 980px) {
+        padding: 8rem 0 3rem;
+      }
+    }
   }
 
   .et_pb_post_title {

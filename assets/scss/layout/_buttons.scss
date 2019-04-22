@@ -1,8 +1,6 @@
 .et_pb_button {
   min-width: 20.5rem;
-  @media screen and (max-width: 1100px) {
-    letter-spacing: 2px !important;
-  }
+  @media screen and (max-width: 1100px) {letter-spacing: 2px !important;}
   @media screen and (max-width: 480px) {
     font-size: 1.8rem !important;
     width: 100%;
@@ -40,10 +38,19 @@
   margin-top: 5.5rem;
   padding: 0 3rem;
   position: relative;
-  &:after {
-    background: $yellow;
-  }
-  &:hover {
-    border-color: $yellow;
+  &:after {background: $yellow;}
+  &:hover {border-color: $yellow;}
+  &.link {
+    border: none;
+    height: auto;
+    line-height: normal;
+    margin-top: 0;
+    min-width: unset;
+    padding: 0;
+    &:after {transition: $default-transition;}
+    &:hover {
+      color: $black;
+      &:after {background: $black;}
+    }
   }
 }
