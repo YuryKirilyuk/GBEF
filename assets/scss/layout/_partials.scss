@@ -40,6 +40,36 @@ h2.section-title {
   }
 }//h2.section-title
 
+.section-title-sm {
+  color: #000;
+  font-size: 5.6rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+  text-transform: none;
+  @media screen and (max-width: 1024px) {font-size: 4.6rem;}
+  @media screen and (max-width: 767px) {text-align: center;}
+  @media screen and (max-width: 650px) {font-size: 4rem;}
+  &:before {
+    background: $yellow;
+    bottom: 0;
+    content: '';
+    height: 5px;
+    margin: auto;
+    right: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-5rem);
+    width: 224px;
+    @media screen and (max-width: 767px) {
+      bottom: -1.5rem;
+      left: 0;
+      right: 0;
+      top: auto;
+      transform: none;
+    }
+  }
+}//.section-title-sm
+
 .slick-arrow {
   background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAgCAMAAAC8RHExAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA1VBMVEUAAAAdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwdHxwAAAC/bD4NAAAARXRSTlMAEEcixPpOzTXxRDf09kI+Su0tT/3rWybkJGYjadwcS6yw7BmT3XwgdYCDsgYDpbwBnL4Kl8HJD4jTEhV42W5g2qbpJTNzKuHUAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAALlJREFUOMuV08cOwkAMRVFTEggh9N57CYTee/P//xKeLRLKm7s+0siyh+hvgWCI0MJsmKiNMI6jluAYiO04s5MAccIRnNTAlg3ilKGBTcHpDIizOeY8igsKFzVwqQziCguugrgmuN4garba/nUU7pIsHaxHfdgOaDga++aqxydTZDRvJnQO0cVS6GoN0Y3QLU53e2gPBz16PEHUVfQM0YvQK07VzQDdcHrXONuHxnd48usNUvI+Pyv4AjprQHCbsEmwAAAAAElFTkSuQmCC") no-repeat center;
   background-size: contain;

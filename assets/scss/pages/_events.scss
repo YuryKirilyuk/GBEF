@@ -1,0 +1,95 @@
+.section-agenda {
+  background-image: url(assets/img/bg_resources1.jpg),
+                    url(assets/img/bg_resources2.jpg);
+  background-position: right top, left bottom;
+  background-size: initial;
+  background-repeat: no-repeat;
+  min-height: 150rem;
+  @media screen and (min-width: 981px) {
+    padding-top: 6.5rem !important;
+  }
+
+  .section-title-sm {
+    margin: 4rem 0;
+    @media screen and (max-width: 767px) {
+      margin: 0 auto 2rem;
+      &:before {bottom: 0;}
+    }
+  }
+
+  .agenda-item {
+    margin-bottom: 4rem !important;
+  }
+
+  .et_pb_text_inner {
+    color: #000;
+    display: flex;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.42;
+    @media screen and (max-width: 767px) {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+    @media screen and (max-width: 630px) {
+      //align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .date {
+    align-items: center;
+    background: $yellow;
+    background-size: 3.8rem 5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.67rem;
+    font-weight: 500;
+    justify-content: center;
+    height: 11.9rem;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 11.9rem;
+    @media screen and (max-width: 1200px) {
+      height: 9rem;
+      font-size: 1.4rem;
+      width: 9rem;
+    }
+    @media screen and (max-width: 980px) {
+      //display: none;
+    }
+    &.grey {
+      background: #a8a9ad;
+    }
+    span {
+      display: block;
+      font-size: 4.9rem;
+      line-height: 1;
+    }
+  }//.date
+
+  .agenda-info {
+    background: #fff;
+    box-shadow: 15px 0 51px rgba(34,30,31, .21);
+    flex: 1;
+    padding: 5rem 4.5% 6rem;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 3rem;
+      padding-top: 3rem;
+    }
+  }
+
+  h4 {
+    color: #000;
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: none;
+    @media screen and (max-width: 767px) {
+      font-size: 2rem;
+    }
+  }
+
+}//.section-agenda
