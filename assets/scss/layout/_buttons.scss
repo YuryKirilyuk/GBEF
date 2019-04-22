@@ -42,12 +42,16 @@
   &:hover {border-color: $yellow;}
   &.link {
     border: none;
-    height: auto;
+    height: auto !important;
     line-height: normal;
     margin-top: 0;
     min-width: unset;
     padding: 0;
-    &:after {transition: $default-transition;}
+    &:after {
+      height: 2px;
+      transition: $default-transition;
+      width: 1.9rem;
+    }
     &:hover {
       color: $black;
       &:after {background: $black;}

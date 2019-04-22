@@ -1,0 +1,125 @@
+.section-leadership-team {
+  background-image: url(assets/img/bg_government1.jpg),
+                    url(assets/img/bg_government2.jpg);
+  background-position: right bottom 61rem, left bottom;
+  background-size: initial;
+  background-repeat: no-repeat;
+  min-height: 150rem;
+
+  .et_pb_row {
+    padding-bottom: 2rem !important;
+    @media screen and (max-width: 320px) {
+      width: 90%;
+    }
+  }
+  .et_pb_text {
+    font-size: 3rem;
+    line-height: normal;
+    @media screen and (max-width: 600px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  .et_pb_team_member {
+    margin-bottom: 5rem !important;
+  }
+
+  .et_pb_team_member_image {
+    margin: 0;
+    max-width: 30.3rem;
+    @media screen and (max-width: 980px) and (min-width: 768px) {
+      max-width: 20rem;
+    }
+    @media screen and (max-width: 600px) {
+      margin: auto;
+    }
+    img {display: block;}
+  }//.et_pb_team_member_image
+
+  .et_pb_team_member_description {
+    background: $yellow;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.45;
+    padding: 4.6rem 7%;
+    @media screen and (max-width: 480px) {
+      font-size: 1.8rem;
+      line-height: 1.35;
+    }
+
+    h4 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.33;
+      margin-bottom: 1.2rem;
+      text-transform: none;
+    }
+
+    .et_pb_member_position {
+      color: $black;
+      font-size: 2.2rem;
+      line-height: 1.31;
+      margin-bottom: 1.4rem;
+      max-width: 65.5rem;
+      @media screen and (max-width: 480px) {
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+    }
+
+    .button.link {
+      bottom: 6.5rem;
+      color: $black;
+      font-size: 1.6rem;
+      padding-right: 3rem;
+      position: absolute;
+      right: 7%;
+      text-transform: uppercase;
+      width: auto !important;
+      @media screen and (max-width: 480px) {
+        bottom: 5.5rem;
+      }
+      &:after {
+        background: $black;
+        right: 0;
+      }
+      &:hover {
+        color: #fff;
+        &:after {background: #fff;}
+      }
+    }
+
+  }//.et_pb_team_member_description
+
+  .et_pb_member_social_links {
+    padding-right: 10rem;
+    li {
+      @media screen and (max-width: 480px) {
+        margin-right: 1rem;
+      }
+    }
+    a {
+      align-items: center;
+      background: #000;
+      color: #fff;
+      display: flex;
+      font-size: 2.5rem;
+      justify-content: center;
+      height: 5.6rem;
+      margin-top: 1.5rem;
+      transition: $default-transition;
+      width: 5.6rem;
+      &:hover {
+        background: #fff;
+        color: $black;
+      }
+      @media screen and (max-width: 480px) {
+        height: 4.6rem;
+        font-size: 2rem;
+        margin-top: 1rem;
+        width: 4.6rem;
+      }
+    }
+  }//.et_pb_member_social_links
+
+}//.section-leadership-team
