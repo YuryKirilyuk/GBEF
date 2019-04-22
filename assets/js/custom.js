@@ -108,6 +108,25 @@ jQuery(function(){
 
     });
 
+    jQuery('#tabs').on('click', 'a', showForm);
+    jQuery('#tabs-content').on('click', '.button', showForm);
+    jQuery('.section-membership-form').on('click', hideForm);
+    jQuery('.et_pb_blurb.close').on('click', hideForm);
+
+
+function showForm() {
+    jQuery('body').css('overflow','hidden');
+    jQuery('.section-membership-form').addClass('show');
+}
+
+function hideForm(e) {
+    var el = jQuery(e.target);
+    if(el.closest('#form-membership').length==0) {
+        jQuery('.section-membership-form').removeClass('show');
+        jQuery('body').css('overflow','visible');
+    }
+
+}
 
 
 });

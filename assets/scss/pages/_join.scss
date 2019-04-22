@@ -24,6 +24,10 @@
   .et_pb_column {
     margin-right: 1%;
     margin-bottom: 0;
+    width: 33%;
+    &:hover {
+      background: #eee;
+    }
   }
   .et_pb_text {
     height: 100%;
@@ -187,3 +191,130 @@
   }//.et_pb_module
 
 }//#tabs-content
+
+
+
+
+.section-membership-form {
+  align-items: center;
+  background: rgba(0,0,0,.85);
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+  display: none;
+  &.show {
+    display: flex;
+  }
+
+  .et-pb-contact-message {
+    background: #fff;
+    color: red;
+    padding: 0 10.5%;
+    p:first-child:last-child {
+      color: green;
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
+  }
+
+  .et_pb_row .et_pb_column {
+    float: none;
+    max-width: 52.5rem;
+    margin: auto !important;
+  }
+
+  .et_pb_blurb {
+    position: absolute;
+    right: 0;
+    top: 0;
+    .et-pb-icon {
+      color: $black;
+      cursor: pointer;
+      font-size: 5rem;
+    }
+  }
+}//.section-membership-form
+
+#form-membership {
+  max-width: 52.5rem;
+  margin: auto;
+  //opacity: 1 !important;
+  width: 100%;
+
+  .et_pb_contact_main_title {
+    background: #fff;
+    color: #000;
+    font-size: 3.1rem;
+    padding: 6rem 10.5% 3.5rem;
+    text-transform: none;
+  }
+  .et_pb_contact {
+    background: $yellow;
+    padding: 3rem 10.5% 6rem;
+  }
+
+  .input {
+    background: none;
+    border-bottom: 2px solid #fff;
+    //box-shadow: inset 0 39px $yellow;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    padding: 7px 5px;
+    @include placeholder {color: #fff;}
+    &.et_pb_contact_message {min-height: 9rem;}
+  }//.input
+
+  .et_contact_bottom_container {
+    float: none;
+    margin: 3rem 0 0;
+    padding-left: 3%;
+    text-align: center;
+    .et_pb_button {
+      margin: 0;
+      width: 100%;
+      &:after {background: #000;}
+      &:hover {
+        color: #fff !important;
+        border-color: #fff !important;
+        &:after {background: #fff;}
+      }
+    }
+  }//.et_contact_bottom_container
+
+
+
+
+
+
+}//#form-membership
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
