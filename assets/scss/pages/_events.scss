@@ -139,10 +139,15 @@
   background-size: initial;
   background-repeat: no-repeat;
   min-height: 120rem;
-
   color: #000;
   font-size: 1.9rem;
   line-height: 1.42;
+
+  .et_pb_row {
+    @media screen and (max-width: 320px) {
+      width: 90%;
+    }
+  }
 
   .et_pb_text {
     background: #fff;
@@ -155,6 +160,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 480px) {
+      font-size: 1.6rem;
+    }
     &:after {
       content: '';
       display: block;
@@ -171,6 +179,9 @@
     font-weight: 500;
     line-height: 1.31;
     margin-bottom: 1.7rem;
+    @media screen and (max-width: 480px) {
+      font-size: 1.3rem;
+    }
   }
 
   h4 {
@@ -179,7 +190,10 @@
     line-height: 1.2;
     margin-bottom: 5px;
     text-transform: none;
-    width: 100%
+    width: 100%;
+    @media screen and (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 
   .et_pb_team_member {
@@ -201,11 +215,17 @@
     .et_pb_module_header {
       font-size: 2rem;
       font-weight: 400;
+      @media screen and (max-width: 480px) {
+        font-size: 1.8rem;
+      }
     }
     .et_pb_member_position {
       font-size: 1.7rem;
       font-weight: 300;
       line-height: 1.29;
+      @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
+      }
     }
   }//.et_pb_team_member
 
