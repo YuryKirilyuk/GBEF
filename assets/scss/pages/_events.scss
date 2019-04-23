@@ -126,4 +126,93 @@
       margin-bottom: 1px;
     }
   }
+}//.section-calendar-to-include
+
+
+.page-title + .section-registration {
+  margin-top: 5rem;
 }
+.section-upcoming-events {
+  background-image: url(assets/img/bg_upcoming_events1.jpg),
+                    url(assets/img/bg_upcoming_events2.jpg);
+  background-position: right top, left bottom 24.5rem;
+  background-size: initial;
+  background-repeat: no-repeat;
+  min-height: 120rem;
+
+  color: #000;
+  font-size: 1.9rem;
+  line-height: 1.42;
+
+  .et_pb_text {
+    background: #fff;
+    box-shadow: 15px 0 51px rgba(34,30,31, .21);
+    margin-bottom: 5rem !important;
+    padding: 4rem 9% 6rem;
+  }
+
+  .et_pb_text_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 33%;
+      @media screen and (max-width: 1100px) and (min-width: 981px) {
+        width: 48%;
+      }
+    }
+  }
+  .date {
+    color: #7d7d7d;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.31;
+    margin-bottom: 1.7rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    text-transform: none;
+    width: 100%
+  }
+
+  .et_pb_team_member {
+    margin: 3rem 0 0;
+    padding: 0 5px;
+    width: 32%;
+    @media screen and (max-width: 1100px) and (min-width: 981px) {
+      width: 48%;
+    }
+    @media screen and (max-width: 600px)  {
+      width: 48%;
+    }
+    .et_pb_team_member_image {
+      max-width: 100%;
+      margin-bottom: 1.7rem;
+      margin-right: 0;
+      text-align: left;
+    }
+    .et_pb_module_header {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    .et_pb_member_position {
+      font-size: 1.7rem;
+      font-weight: 300;
+      line-height: 1.29;
+    }
+  }//.et_pb_team_member
+
+
+
+
+}//.section-upcoming-events
+
+
+
