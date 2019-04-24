@@ -22,7 +22,10 @@ jQuery(window).on('load', function () {
    ========================================================================== */
 
     jQuery(window).resize(function() {
-		
+
+
+        resetHeight();
+
 		
 	});
 
@@ -129,4 +132,39 @@ function hideForm(e) {
 }
 
 
+    jQuery('.section-members .et_pb_column').append('<div class="et_pb_team_member empty"></div><div class="et_pb_team_member empty"></div>');
+    jQuery('.section-members .et_pb_team_member_image ').each(function (){
+        jQuery(this).append('<div class="toggle-button"></div>');
+    });
+    jQuery('.toggle-button').each(function (){
+        var $el = jQuery(this);
+
+
+        $el.on('click', function(){
+            var parentHeight = $el.parents('.et_pb_team_member').height();
+
+            $el.parents('.et_pb_team_member').height(parentHeight);
+
+            if($el.hasClass('active')) {
+                $el.parents('.et_pb_team_member').removeAttr('style');
+            }
+
+            if(!($el.hasClass('active'))) {
+                jQuery('.et_pb_column ').removeClass('blur')
+                                        .find('.toggle-button').removeClass('active');
+            }
+            $el.toggleClass('active')
+                .parents('.et_pb_team_member ')
+                .toggleClass('show')
+                .siblings().removeClass('show')
+                .parent().toggleClass('blur');
+        });
+    });
+
 });
+
+function resetHeight() {
+    jQuery('.et_pb_team_member').each(function(){
+        jQuery(this).removeAttr('style');
+    });
+}
