@@ -139,10 +139,21 @@ function hideForm(e) {
     jQuery('.toggle-button').each(function (){
         var $el = jQuery(this);
 
-
         $el.on('click', function(){
-            var parentHeight = $el.parents('.et_pb_team_member').height();
+            var parentHeight = $el.parents('.et_pb_team_member').height(),
+                offset = $el.offset(),
+                windowWidth = jQuery(window).width(),
+                breakPoint = windowWidth / 2;
 
+            //direction alignment of popup
+            if(breakPoint < offset.left) {
+                $el.parents('.et_pb_team_member').addClass('align-right');
+            }
+            else {
+                $el.parents('.et_pb_team_member').removeClass('align-right');
+            }
+
+            //setting parents height
             $el.parents('.et_pb_team_member').height(parentHeight);
 
             if($el.hasClass('active')) {

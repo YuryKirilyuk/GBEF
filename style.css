@@ -1031,6 +1031,8 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 600px) { .section-tweets .et_pb_column { margin: 0 0 3rem !important; width: 100% !important; } }
 
+.section-tweets .timeline-TweetList-tweet { float: left; width: 30%; }
+
 .section-contact { background-position: 35px 160px !important; padding-top: 0 !important; }
 
 @media screen and (min-width: 981px) { .section-contact { padding-bottom: 16.6rem !important; } }
@@ -1543,11 +1545,15 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-members .et_pb_team_member.show .et_pb_team_member_description { background: #fff; box-shadow: 10px 7px 0 rgba(0, 0, 0, 0.17); margin-left: -1rem; padding-bottom: 3.5rem; padding-left: 1rem; position: absolute; width: 575px; z-index: 2; }
 
+@media screen and (max-width: 930px) { .section-members .et_pb_team_member.show .et_pb_team_member_description { width: 475px; } }
+
 @media screen and (max-width: 850px) { .section-members .et_pb_team_member.show .et_pb_team_member_description { width: 60%; } }
 
 @media screen and (max-width: 768px) { .section-members .et_pb_team_member.show .et_pb_team_member_description { left: 0; margin-left: 0; width: 100%; } }
 
 .section-members .et_pb_team_member.show .et_pb_member_position ~ p { display: block; }
+
+.section-members .et_pb_team_member.align-right .et_pb_team_member_description { right: 0; }
 
 .section-members .et_pb_team_member .et_pb_team_member_image { display: block; float: none; margin-right: 0; max-width: 100%; }
 
