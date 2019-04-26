@@ -22,6 +22,7 @@
   @media screen and (max-width: 768px) {width: 95%;}
 
   .et_pb_column {
+    cursor: pointer;
     margin-right: 1%;
     margin-bottom: 0;
     width: 33%;
@@ -289,6 +290,15 @@
   }//.et_contact_bottom_container
 
 
+  .et_pb_contact_field_options_title {display: none;}
+
+  .et_pb_contact_field_checkbox {
+    color: #fff;
+    label {
+      align-items: center;
+      display: flex;
+    }
+  }
 
 
 

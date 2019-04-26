@@ -86,6 +86,7 @@
         padding-bottom: 40px;
         @media screen and (max-width: 1450px) {font-size: 1.6rem;}
         @media screen and (max-width: 1200px) {font-size: 1.5rem;}
+        &[href^="#"] {pointer-events: none;}
       }
 
       .mobile {

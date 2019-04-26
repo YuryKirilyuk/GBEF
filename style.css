@@ -607,6 +607,8 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 1200px) { #main-header .et_menu_container #et-top-navigation #top-menu a { font-size: 1.5rem; } }
 
+#main-header .et_menu_container #et-top-navigation #top-menu a[href^="#"] { pointer-events: none; }
+
 #main-header .et_menu_container #et-top-navigation .mobile { background: #ddbb58; }
 
 @media screen and (min-width: 981px) { #main-header .et_menu_container #et-top-navigation .mobile { display: none; } }
@@ -657,17 +659,31 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 #main-footer #footer-bottom { padding-bottom: 5rem; padding-top: 5px; }
 
-#main-footer #footer-bottom .container { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
+#main-footer #footer-bottom .container { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
 
-@media screen and (max-width: 1300px) { #main-footer #footer-bottom .container { -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; width: 90%; } }
+@media screen and (max-width: 1300px) { #main-footer #footer-bottom .container { -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; width: 90%; } }
 
 @media screen and (max-width: 767px) { #main-footer #footer-bottom #et-footer-nav { display: none; } }
+
+#main-footer #footer-bottom .bottom-nav { display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+#main-footer #footer-bottom .bottom-nav li { position: relative; }
 
 @media screen and (max-width: 1300px) { #main-footer #footer-bottom .bottom-nav li { margin-bottom: 1rem; } }
 
 #main-footer #footer-bottom .bottom-nav li:last-child { padding-right: 0; }
 
-#main-footer #footer-info { margin: 0; padding: 0; }
+#main-footer #footer-bottom .bottom-nav li a[href^="#"] { pointer-events: none; }
+
+#main-footer #footer-bottom .bottom-nav li ul { padding: 1rem 0; transition: all 0.2s linear; }
+
+#main-footer #footer-bottom .bottom-nav li ul li { display: block; margin-bottom: 5px; padding: 3px 0; }
+
+#main-footer #footer-bottom .bottom-nav li ul li a { font-size: 1.2rem; text-transform: none; }
+
+#main-footer #footer-bottom .bottom-nav li ul li a:hover { color: #fff; opacity: 1; }
+
+#main-footer #footer-info { margin: 0; padding: 1.5rem 0; }
 
 @media screen and (max-width: 767px) { #main-footer #footer-info { margin-top: 2rem; } }
 
@@ -742,7 +758,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-info-box .et_pb_column .et_pb_module { background: #fff; height: 100%; }
 
-.section-info-box .et_pb_column h4 { font-size: 2.2rem; font-weight: 700; line-height: 1.2727; margin-bottom: 2.7rem; margin-top: 1.5rem; padding: 0 3.4rem; position: relative; }
+.section-info-box .et_pb_column h4 { font-size: 2.2rem; font-weight: 700; line-height: 1.2727; margin-bottom: 2.7rem; margin-top: 1.5rem; padding: 0 3.3rem; position: relative; }
 
 @media screen and (max-width: 580px) { .section-info-box .et_pb_column h4 { font-size: 1.5rem; padding: 0 1rem; } }
 
@@ -750,13 +766,13 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 580px) { .section-info-box .et_pb_column h4:before { height: 3.5rem; left: 1rem; top: -5.5rem; width: 3.5rem; } }
 
-.section-info-box .et_pb_column h4 + p { padding: 0 3.4rem; }
+.section-info-box .et_pb_column h4 + p { padding: 0 3.3rem; }
 
 @media screen and (max-width: 580px) { .section-info-box .et_pb_column h4 + p { font-size: 1.5rem; padding: 0 1rem; } }
 
 .section-info-box .et_pb_column p:first-child { text-align: center; }
 
-.section-info-box .et_pb_column p:last-child { margin-top: auto; padding: 0 3.4rem; }
+.section-info-box .et_pb_column p:last-child { margin-top: auto; padding: 0 3.3rem; }
 
 @media screen and (max-width: 580px) { .section-info-box .et_pb_column p:last-child { padding: 0 1rem; } }
 
@@ -769,6 +785,10 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 .section-info-box .et_pb_column p:last-child a:hover { color: #010101; }
 
 .section-info-box .et_pb_column p:last-child a:hover:after { background: #010101; }
+
+.section-info-box .et_pb_column p:not(:last-child) a { color: #555; font-size: 1.7rem; font-weight: 300; letter-spacing: 0; text-decoration: underline; text-transform: none; }
+
+.section-info-box .et_pb_column p:not(:last-child) a:hover { text-decoration: none; }
 
 .section-info-box .et_pb_column a { display: inline-block; font-size: 1.6rem; font-weight: 500; letter-spacing: 3px; position: relative; text-transform: uppercase; }
 
@@ -1027,11 +1047,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 980px) { .section-tweets { padding-top: 3rem !important; } }
 
-.section-tweets .et_pb_column { max-height: 37rem; overflow: auto; }
-
 @media screen and (max-width: 600px) { .section-tweets .et_pb_column { margin: 0 0 3rem !important; width: 100% !important; } }
-
-.section-tweets .timeline-TweetList-tweet { float: left; width: 30%; }
 
 .section-contact { background-position: 35px 160px !important; padding-top: 0 !important; }
 
@@ -1087,7 +1103,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 768px) { #tabs { width: 95%; } }
 
-#tabs .et_pb_column { margin-right: 1%; margin-bottom: 0; width: 33%; }
+#tabs .et_pb_column { cursor: pointer; margin-right: 1%; margin-bottom: 0; width: 33%; }
 
 #tabs .et_pb_column:hover { background: #eee; }
 
@@ -1222,6 +1238,12 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 #form-membership .et_contact_bottom_container .et_pb_button:hover, #form-membership .et_contact_bottom_container .button:hover { color: #fff !important; border-color: #fff !important; }
 
 #form-membership .et_contact_bottom_container .et_pb_button:hover:after, #form-membership .et_contact_bottom_container .button:hover:after { background: #fff; }
+
+#form-membership .et_pb_contact_field_options_title { display: none; }
+
+#form-membership .et_pb_contact_field_checkbox { color: #fff; }
+
+#form-membership .et_pb_contact_field_checkbox label { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 .section-header-text_about { background: #e0e0e1 url(assets/img/bg_about_hero_text.jpg) no-repeat right bottom; font-size: 2rem; font-weight: 300; line-height: 1.4; padding-bottom: 2rem !important; }
 
@@ -1555,13 +1577,13 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-members .et_pb_team_member.align-right .et_pb_team_member_description { right: 0; }
 
-.section-members .et_pb_team_member .et_pb_team_member_image { display: block; float: none; margin-right: 0; max-width: 100%; }
+.section-members .et_pb_team_member .et_pb_team_member_image { cursor: pointer; display: block; float: none; margin-bottom: 0; margin-right: 0; max-width: 100%; }
 
 .section-members .et_pb_team_member .et_pb_team_member_description { display: block; padding-bottom: 2rem; padding-right: 3rem; padding-top: 3.5rem; }
 
 @media screen and (max-width: 850px) { .section-members .et_pb_team_member .et_pb_team_member_description { padding-top: 2.5rem; } }
 
-.section-members .et_pb_team_member .et_pb_module_header { color: #000; font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; text-transform: none; }
+.section-members .et_pb_team_member .et_pb_module_header { color: #000; cursor: pointer; font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; text-transform: none; }
 
 @media screen and (max-width: 1024px) { .section-members .et_pb_team_member .et_pb_module_header { font-size: 2rem; } }
 

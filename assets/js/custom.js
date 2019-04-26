@@ -136,43 +136,47 @@ function hideForm(e) {
     jQuery('.section-members .et_pb_team_member_image ').each(function (){
         jQuery(this).append('<div class="toggle-button"></div>');
     });
-    jQuery('.toggle-button').each(function (){
-        var $el = jQuery(this);
-
-        $el.on('click', function(){
-            var parentHeight = $el.parents('.et_pb_team_member').height(),
-                offset = $el.offset(),
-                windowWidth = jQuery(window).width(),
-                breakPoint = windowWidth / 2;
-
-            //direction alignment of popup
-            if(breakPoint < offset.left) {
-                $el.parents('.et_pb_team_member').addClass('align-right');
-            }
-            else {
-                $el.parents('.et_pb_team_member').removeClass('align-right');
-            }
-
-            //setting parents height
-            $el.parents('.et_pb_team_member').height(parentHeight);
-
-            if($el.hasClass('active')) {
-                $el.parents('.et_pb_team_member').removeAttr('style');
-            }
-
-            if(!($el.hasClass('active'))) {
-                jQuery('.et_pb_column ').removeClass('blur')
-                                        .find('.toggle-button').removeClass('active');
-            }
-            $el.toggleClass('active')
-                .parents('.et_pb_team_member ')
-                .toggleClass('show')
-                .siblings().removeClass('show')
-                .parent().toggleClass('blur');
-        });
-    });
+    //jQuery('.toggle-button').each(showPopup);
+    jQuery('.section-members .et_pb_module_header').each(showPopup);
+    jQuery('.section-members .et_pb_team_member_image').each(showPopup);
 
 });
+
+function showPopup() {
+    var $el = jQuery(this);
+
+    $el.on('click', function(){
+        var parentHeight = $el.parents('.et_pb_team_member').height(),
+            offset = $el.offset(),
+            windowWidth = jQuery(window).width(),
+            breakPoint = windowWidth / 2;
+
+        //direction alignment of popup
+        if(breakPoint < offset.left) {
+            $el.parents('.et_pb_team_member').addClass('align-right');
+        }
+        else {
+            $el.parents('.et_pb_team_member').removeClass('align-right');
+        }
+
+        //setting parents height
+        $el.parents('.et_pb_team_member').height(parentHeight);
+
+        if($el.hasClass('active')) {
+            $el.parents('.et_pb_team_member').removeAttr('style');
+        }
+
+        if(!($el.hasClass('active'))) {
+            jQuery('.et_pb_column ').removeClass('blur')
+                .find('.toggle-button').removeClass('active');
+        }
+        $el.toggleClass('active')
+            .parents('.et_pb_team_member ')
+            .toggleClass('show')
+            .siblings().removeClass('show')
+            .parent().toggleClass('blur');
+    });
+}
 
 function resetHeight() {
     jQuery('.et_pb_team_member').each(function(){

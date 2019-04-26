@@ -164,7 +164,7 @@
       line-height: 1.2727;
       margin-bottom: 2.7rem;
       margin-top: 1.5rem;
-      padding: 0 3.4rem;
+      padding: 0 3.3rem;
       position: relative;
       @media screen and (max-width: 580px) {
         font-size: 1.5rem;
@@ -186,7 +186,7 @@
         }
       }
       + p {
-        padding: 0 3.4rem;
+        padding: 0 3.3rem;
         @media screen and (max-width: 580px) {
           font-size: 1.5rem;
           padding: 0 1rem;
@@ -199,7 +199,7 @@
     }
     p:last-child {
       margin-top: auto;
-      padding: 0 3.4rem;
+      padding: 0 3.3rem;
       @media screen and (max-width: 580px) {
         padding: 0 1rem;
       }
@@ -227,6 +227,15 @@
         }
       }
     }//p:last-child
+    p:not(:last-child) a {
+      color: #555;
+      font-size: 1.7rem;
+      font-weight: 300;
+      letter-spacing: 0;
+      text-decoration: underline;
+      text-transform: none;
+      &:hover {text-decoration: none;}
+    }
 
     a {
       display: inline-block;
@@ -920,19 +929,13 @@
     padding-top: 3rem !important;
   }
   .et_pb_column {
-    max-height: 37rem;
-    overflow: auto;
+    //max-height: 37rem;
+    //overflow: auto;
     @media screen and (max-width: 600px) {
       margin: 0 0 3rem !important;
       width: 100% !important;
     }
   }
-
-  .timeline-TweetList-tweet {
-    float: left;
-    width: 30%;
-  }
-
 
 
 }//.section-tweets
