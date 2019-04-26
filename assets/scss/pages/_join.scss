@@ -272,6 +272,17 @@
     &.et_pb_contact_message {min-height: 9rem;}
   }//.input
 
+  .et_pb_contact_field[data-type=select]:after {
+    border-color: #fff transparent transparent transparent;
+    margin-top: 0;
+  }
+  option {
+    color: $black;
+    &:first-child {
+      display: none;
+    }
+  }
+
   .et_contact_bottom_container {
     float: none;
     margin: 3rem 0 0;

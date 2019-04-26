@@ -140,6 +140,15 @@ function hideForm(e) {
     jQuery('.section-members .et_pb_module_header').each(showPopup);
     jQuery('.section-members .et_pb_team_member_image').each(showPopup);
 
+
+
+
+    jQuery('.sorting span').on('click', function(){
+        jQuery(this).addClass('active').siblings().removeClass('active');
+    });
+
+
+
 });
 
 function showPopup() {
@@ -148,45 +157,26 @@ function showPopup() {
 
     $el.on('click', function(){
         var parentHeight = $item.height(),
-            parentwidth = $item.width(),
             windowWidth = jQuery(window).width(),
             elOffset = $item.offset(),
-            nextEloffset = $item.next().offset(),
-            gap = nextEloffset.left - (elOffset.left + parentwidth),
-            breakPoint = (windowWidth > 1024) ? windowWidth * .7 : windowWidth * .6,
-            popupWidth = parentwidth * 2 + gap;
-
-        console.log(parentwidth);
-        console.log(nextEloffset);
-        console.log(gap);
-
-        $item.find('.et_pb_team_member_description').width(popupWidth);
+            breakPoint = (windowWidth > 1024) ? windowWidth * .7 : windowWidth * .6;
 
         //direction alignment of popup
-        if(breakPoint < elOffset.left) {
-            $item.addClass('align-right');
-        }
-        else {
-            $item.removeClass('align-right');
-        }
+        if(breakPoint < elOffset.left) $item.addClass('align-right');
+        else $item.removeClass('align-right');
 
-        //setting parents height
+        //setting parents height(for no jumping on changing position to absolute)
         $item.height(parentHeight);
-
-        if($el.hasClass('active')) {
-            $item.removeAttr('style');
-        }
+        //removing parents height
+        if($el.hasClass('active')) $item.removeAttr('style');
 
         if(!($el.hasClass('active'))) {
-            var $elList = jQuery('.et_pb_column');
-            $elList.removeClass('blur').find('.toggle-button').removeClass('active');
-            $elList.find('.et_pb_team_member_description').removeAttr('style');
+            jQuery('.et_pb_column').find('.toggle-button').removeClass('active');
         }
         $el.toggleClass('active')
             .parents('.et_pb_team_member ')
             .toggleClass('show')
             .siblings().removeClass('show');
-            //.parent().toggleClass('blur');
     });
 }
 
