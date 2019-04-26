@@ -2,7 +2,7 @@
   height: 90rem;
   padding: 0 !important;
   @media screen and (min-width: 1291px) {
-    margin-bottom: -296px !important;
+    margin-bottom: -294px !important;
   }
   @media screen and (max-width: 1366px) {
     height: 70rem;
@@ -828,6 +828,7 @@
 
 
 .section-news-updates {
+  padding-bottom: 0 !important;
   @media screen and (min-width: 981px) {
     padding-top: 0 !important;
     .et_pb_row {
@@ -925,8 +926,9 @@
 
 
 .section-tweets {
+  padding-top: 0 !important;
   @media screen and (max-width: 980px) {
-    padding-top: 3rem !important;
+    //padding-top: 3rem !important;
   }
   .et_pb_column {
     //max-height: 37rem;

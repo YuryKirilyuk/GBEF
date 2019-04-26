@@ -172,7 +172,8 @@
         width: 48%;
       }
     }
-  }
+    p {width: 100%;}
+  }//.et_pb_text_inner
   .date {
     color: #7d7d7d;
     font-size: 1.5rem;
@@ -207,7 +208,7 @@
       width: 48%;
     }
     .et_pb_team_member_image {
-      max-width: 100%;
+      max-width: 115px;
       margin-bottom: 1.7rem;
       margin-right: 0;
       text-align: left;

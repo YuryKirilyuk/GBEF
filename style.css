@@ -697,7 +697,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-hero { height: 90rem; padding: 0 !important; }
 
-@media screen and (min-width: 1291px) { .section-hero { margin-bottom: -296px !important; } }
+@media screen and (min-width: 1291px) { .section-hero { margin-bottom: -294px !important; } }
 
 @media screen and (max-width: 1366px) { .section-hero { height: 70rem; } }
 
@@ -1018,6 +1018,8 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-next-event .persons-list .et_pb_member_position { color: #010101; font-size: 1.7rem; font-weight: 300; line-height: 1.29; opacity: .7; }
 
+.section-news-updates { padding-bottom: 0 !important; }
+
 @media screen and (min-width: 981px) { .section-news-updates { padding-top: 0 !important; }
   .section-news-updates .et_pb_row { padding-top: 0; } }
 
@@ -1049,7 +1051,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-news-updates .more-link:after { background: #ddbb58; bottom: 0; content: ''; height: 2px; margin: auto; position: absolute; right: 0; top: 0; transition: all 0.2s linear; width: 20px; }
 
-@media screen and (max-width: 980px) { .section-tweets { padding-top: 3rem !important; } }
+.section-tweets { padding-top: 0 !important; }
 
 @media screen and (max-width: 600px) { .section-tweets .et_pb_column { margin: 0 0 3rem !important; width: 100% !important; } }
 
@@ -1455,6 +1457,8 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 1100px) and (min-width: 981px) { .section-upcoming-events .et_pb_text_inner:after { width: 48%; } }
 
+.section-upcoming-events .et_pb_text_inner p { width: 100%; }
+
 .section-upcoming-events .date { color: #7d7d7d; font-size: 1.5rem; font-weight: 500; line-height: 1.31; margin-bottom: 1.7rem; }
 
 @media screen and (max-width: 480px) { .section-upcoming-events .date { font-size: 1.3rem; } }
@@ -1469,7 +1473,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 600px) { .section-upcoming-events .et_pb_team_member { width: 48%; } }
 
-.section-upcoming-events .et_pb_team_member .et_pb_team_member_image { max-width: 100%; margin-bottom: 1.7rem; margin-right: 0; text-align: left; }
+.section-upcoming-events .et_pb_team_member .et_pb_team_member_image { max-width: 115px; margin-bottom: 1.7rem; margin-right: 0; text-align: left; }
 
 .section-upcoming-events .et_pb_team_member .et_pb_module_header { font-size: 2rem; font-weight: 400; }
 
