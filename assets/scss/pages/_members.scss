@@ -72,6 +72,7 @@
     @media screen and (max-width: 550px) {width: 43%;}
     &.empty {height: 0;}
     &.show {
+      .et_pb_team_member_image img {filter: grayscale(0);}
       .et_pb_team_member_description {
         background: #fff;
         box-shadow: 10px 7px 0 rgba(0,0,0,.17);
@@ -95,6 +96,9 @@
       .et_pb_team_member_description {
         right: 0;
       }
+    }//&.align-right
+    &:hover {
+      .et_pb_team_member_image img {filter: grayscale(0);}
     }
 
 
@@ -105,13 +109,21 @@
       margin-bottom: 0;
       margin-right: 0;
       max-width: 100%;
+      img {
+        filter: grayscale(100%);
+        transition: $default-transition;
+      }
     }
     .et_pb_team_member_description {
       display: block;
       padding-bottom: 2rem;
       padding-right: 3rem;
       padding-top: 3.5rem;
-      @media screen and (max-width: 850px) {padding-top: 2.5rem;}
+      @media screen and (max-width: 850px) {
+        left: 0;
+        padding-top: 2.5rem;
+        width: 100% !important;
+      }
     }
 
     .et_pb_module_header {

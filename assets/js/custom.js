@@ -143,38 +143,50 @@ function hideForm(e) {
 });
 
 function showPopup() {
-    var $el = jQuery(this);
+    var $el = jQuery(this),
+        $item = $el.parents('.et_pb_team_member');
 
     $el.on('click', function(){
-        var parentHeight = $el.parents('.et_pb_team_member').height(),
-            offset = $el.offset(),
+        var parentHeight = $item.height(),
+            parentwidth = $item.width(),
             windowWidth = jQuery(window).width(),
-            breakPoint = windowWidth / 2;
+            elOffset = $item.offset(),
+            nextEloffset = $item.next().offset(),
+            gap = nextEloffset.left - (elOffset.left + parentwidth),
+            breakPoint = (windowWidth > 1024) ? windowWidth * .7 : windowWidth * .6,
+            popupWidth = parentwidth * 2 + gap;
+
+        console.log(parentwidth);
+        console.log(nextEloffset);
+        console.log(gap);
+
+        $item.find('.et_pb_team_member_description').width(popupWidth);
 
         //direction alignment of popup
-        if(breakPoint < offset.left) {
-            $el.parents('.et_pb_team_member').addClass('align-right');
+        if(breakPoint < elOffset.left) {
+            $item.addClass('align-right');
         }
         else {
-            $el.parents('.et_pb_team_member').removeClass('align-right');
+            $item.removeClass('align-right');
         }
 
         //setting parents height
-        $el.parents('.et_pb_team_member').height(parentHeight);
+        $item.height(parentHeight);
 
         if($el.hasClass('active')) {
-            $el.parents('.et_pb_team_member').removeAttr('style');
+            $item.removeAttr('style');
         }
 
         if(!($el.hasClass('active'))) {
-            jQuery('.et_pb_column ').removeClass('blur')
-                .find('.toggle-button').removeClass('active');
+            var $elList = jQuery('.et_pb_column');
+            $elList.removeClass('blur').find('.toggle-button').removeClass('active');
+            $elList.find('.et_pb_team_member_description').removeAttr('style');
         }
         $el.toggleClass('active')
             .parents('.et_pb_team_member ')
             .toggleClass('show')
-            .siblings().removeClass('show')
-            .parent().toggleClass('blur');
+            .siblings().removeClass('show');
+            //.parent().toggleClass('blur');
     });
 }
 
