@@ -653,7 +653,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 980px) { #main-footer .socials .container { width: 90%; } }
 
-#main-footer .et-social-icons { float: none; text-align: center; }
+#main-footer .et-social-icons { float: none; margin-left: -2rem; text-align: center; }
 
 #main-footer .et-social-icons .et-social-icon { margin-top: 5px; margin-bottom: 5px; }
 
@@ -1067,6 +1067,8 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-contact .et_pb_column .et_pb_contact_form_container { background: #ddbb58; height: 67rem; margin-bottom: 0; max-width: 52rem; padding: 10rem 3.8% 5.5rem; position: relative; }
 
+@media screen and (min-width: 981px) { .section-contact .et_pb_column .et_pb_contact_form_container { -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; min-width: 32.5rem; width: 40%; } }
+
 @media screen and (max-width: 980px) { .section-contact .et_pb_column .et_pb_contact_form_container { margin: auto; } }
 
 .section-contact .et_pb_column .et_pb_contact_form_container:before { background: #000; bottom: 0; content: ''; height: 46.2rem; left: -1.1rem; margin: auto; position: absolute; top: 0; width: 1.1rem; }
@@ -1080,6 +1082,8 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 .section-contact .et_pb_column .et_pb_contact_form_container .et_contact_bottom_container .et_pb_button, .section-contact .et_pb_column .et_pb_contact_form_container .et_contact_bottom_container .button { margin: 0; width: 100%; }
 
 .section-contact .et_pb_column .et_pb_contact_form_container .et_contact_bottom_container .et_pb_button:hover, .section-contact .et_pb_column .et_pb_contact_form_container .et_contact_bottom_container .button:hover { color: #fff !important; border-color: #fff !important; }
+
+.login .section-contact .et_pb_column .et_pb_contact_form_container .et_contact_bottom_container { margin-top: 7rem; }
 
 .section-contact .et_pb_column .et_pb_contact_form_container .input { background: none; border-bottom: 2px solid #fff; color: #fff; font-size: 20px; font-weight: 300; margin-bottom: 1rem; padding: 7px 5px; }
 
@@ -1095,7 +1099,25 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-contact .et_pb_column .et_pb_contact_form_container .et-pb-contact-message { color: red; }
 
+.login .section-contact .et_pb_column .et_pb_contact_form_container { padding-top: 12rem; }
+
+@media screen and (max-width: 980px) { .login .section-contact .et_pb_column .et_pb_contact_form_container { height: 55rem; padding-top: 8rem; } }
+
+@media screen and (max-width: 320px) { .login .section-contact .et_pb_column .et_pb_contact_form_container { height: 45rem; padding-top: 5rem; } }
+
 .section-contact .et_pb_column .et_pb_image img { height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.login-links { font-size: 2.2rem; left: 0; line-height: 1.4; padding: 0 3.8%; position: absolute; top: 40.5rem; }
+
+@media screen and (min-width: 981px) { .login-links { width: 40%; } }
+
+@media screen and (max-width: 980px) { .login-links { margin: auto; max-width: 52rem; right: 0; top: 37.5rem; width: 100%; } }
+
+@media screen and (max-width: 320px) { .login-links { font-size: 1.8rem; top: 31.5rem; } }
+
+.login-links a { color: #010101; display: inline-block; margin-bottom: 1rem; text-decoration: underline; }
+
+.login-links a:hover { text-decoration: none; }
 
 .section-membership { background-position: bottom -135px right -95px !important; }
 

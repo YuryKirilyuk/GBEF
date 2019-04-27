@@ -27,6 +27,12 @@
       max-width: 52rem;
       padding: 10rem 3.8% 5.5rem;
       position: relative;
+
+      @media screen and (min-width: 981px) {
+        flex-shrink: 0;
+        min-width: 32.5rem;
+        width: 40%;
+      }
       @media screen and (max-width: 980px) {
         margin: auto;
       }
@@ -66,6 +72,7 @@
             border-color: #fff !important;
           }
         }
+        .login & {margin-top: 7rem;}
       }//.et_contact_bottom_container
 
       .input {
@@ -84,6 +91,18 @@
         color: red;
       }
 
+      .login & {
+        padding-top: 12rem;
+        @media screen and (max-width: 980px) {
+          height: 55rem;
+          padding-top: 8rem;
+        }
+        @media screen and (max-width: 320px) {
+          height: 45rem;
+          padding-top: 5rem;
+        }
+      }
+
     }//.et_pb_contact_form_container
 
     .et_pb_image img {
@@ -94,3 +113,33 @@
   }//.et_pb_column
 
 }//.section-contact
+
+.login-links {
+  font-size: 2.2rem;
+  left: 0;
+  line-height: 1.4;
+  padding: 0 3.8%;
+  position: absolute;
+  top: 40.5rem;
+  @media screen and (min-width: 981px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 980px) {
+    margin: auto;
+    max-width: 52rem;
+    right: 0;
+    top: 37.5rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 1.8rem;
+    top: 31.5rem;
+  }
+  a {
+    color: $black;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    &:hover {text-decoration: none;}
+  }
+}
