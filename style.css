@@ -1687,7 +1687,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .blog .page-title { background-image: url(assets/img/bg_page_title.jpg); }
 
-.section-blog { background-image: url(assets/img/bg_resources1.jpg), url(assets/img/bg_resources2.jpg); background-position: right top, left bottom -35rem; background-size: initial; background-repeat: no-repeat; min-height: 80rem; }
+.section-blog { background-image: url(assets/img/bg_resources1.jpg), url(assets/img/bg_resources2.jpg); background-position: right top, left bottom -35rem; background-size: initial; background-repeat: no-repeat; min-height: 100rem; }
 
 @media screen and (min-width: 981px) { .section-blog { padding-top: 6.5rem !important; } }
 
