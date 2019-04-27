@@ -151,6 +151,9 @@
 .contact .top-right li:last-child a:after {
   @media screen and (min-width: 981px) {content: '';}
 }
+.blog .top-right li:nth-child(2) a:after {
+  @media screen and (min-width: 981px) {content: '';}
+}
 .login .top-right li:first-child a:after {
   @media screen and (min-width: 981px) {content: '';}
 }

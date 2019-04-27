@@ -69,6 +69,52 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
         </div><!-- .et_pb_row -->
     </div><!-- .et_pb_section -->
 
+
+
+
+
+
+
+    <div class="et_pb_with_border et_pb_section et_pb_section_4 section-subscribe et_pb_with_background et_section_regular">
+        <div class="et_pb_row et_pb_row_1">
+            <div class="et_pb_column et_pb_column_4_4 et_pb_column_1    et_pb_css_mix_blend_mode_passthrough et-last-child">
+                <div id="et_pb_contact_form_1" class="et_pb_with_border et_pb_module et_pb_contact_form_1 et_pb_contact_form_container clearfix" data-form_unique_num="1">
+                    <h1 class="et_pb_contact_main_title">Subscribe to Email Updates</h1>
+                    <div class="et-pb-contact-message"></div>
+                    <div class="et_pb_contact">
+                        <form class="et_pb_contact_form clearfix" method="post" action="http://testing15.lightmix.com/contact/">
+                            <p class="et_pb_contact_field et_pb_contact_field_4 et_pb_contact_field_half" data-id="firstname" data-type="input">
+
+
+                                <label for="et_pb_contact_firstname_1" class="et_pb_contact_form_label">First Name*</label>
+                                <input type="text" id="et_pb_contact_firstname_1" class="input" value="" name="et_pb_contact_firstname_1" data-required_mark="required" data-field_type="input" data-original_id="firstname" placeholder="First Name*">
+                            </p><p class="et_pb_contact_field et_pb_contact_field_5 et_pb_contact_field_half et_pb_contact_field_last" data-id="lastname" data-type="input">
+
+
+                                <label for="et_pb_contact_lastname_1" class="et_pb_contact_form_label">Last Name*</label>
+                                <input type="text" id="et_pb_contact_lastname_1" class="input" value="" name="et_pb_contact_lastname_1" data-required_mark="required" data-field_type="input" data-original_id="lastname" placeholder="Last Name*">
+                            </p><p class="et_pb_contact_field et_pb_contact_field_6 et_pb_contact_field_half" data-id="email" data-type="email">
+
+
+                                <label for="et_pb_contact_email_1" class="et_pb_contact_form_label">Email Address*</label>
+                                <input type="text" id="et_pb_contact_email_1" class="input" value="" name="et_pb_contact_email_1" data-required_mark="required" data-field_type="email" data-original_id="email" placeholder="Email Address*">
+                            </p>
+                            <input type="hidden" value="et_contact_proccess" name="et_pb_contactform_submit_1">
+                            <input type="text" value="" name="et_pb_contactform_validate_1" class="et_pb_contactform_validate_field">
+                            <div class="et_contact_bottom_container">
+
+                                <button type="submit" class="et_pb_contact_submit et_pb_button">Submit</button>
+                            </div>
+                            <input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-1" name="_wpnonce-et-pb-contact-form-submitted-1" value="b35e78b187"><input type="hidden" name="_wp_http_referer" value="/blog/">
+                        </form>
+                    </div> <!-- .et_pb_contact -->
+                </div> <!-- .et_pb_contact_form_container -->
+
+
+            </div> <!-- .et_pb_column -->
+        </div> <!-- .et_pb_row -->
+    </div>
+
 </div> <!-- #main-content -->
 
 <?php
