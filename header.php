@@ -311,7 +311,7 @@
                 <div class="top-right">
                     <ul>
                         <li><a href="<?php echo get_site_url(); ?>/login/">LOGIN</a></li>
-                        <li><a href="#">BLOG</a></li>
+                        <li><a href="<?php echo get_site_url(); ?>/blog/">BLOG</a></li>
                         <li><a href="<?php echo get_site_url(); ?>/contact/">CONTACT</a></li>
                     </ul>
                 </div>
