@@ -1111,18 +1111,6 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-contact .et_pb_column .et_pb_image img { height: 100%; -o-object-fit: cover; object-fit: cover; }
 
-.login-links { font-size: 2.2rem; left: 0; line-height: 1.4; padding: 0 3.8%; position: absolute; top: 40.5rem; }
-
-@media screen and (min-width: 981px) { .login-links { width: 40%; } }
-
-@media screen and (max-width: 980px) { .login-links { margin: auto; max-width: 52rem; right: 0; top: 37.5rem; width: 100%; } }
-
-@media screen and (max-width: 320px) { .login-links { font-size: 1.8rem; top: 31.5rem; } }
-
-.login-links a { color: #010101; display: inline-block; margin-bottom: 1rem; text-decoration: underline; }
-
-.login-links a:hover { text-decoration: none; }
-
 .section-membership { background-position: bottom -135px right -95px !important; }
 
 @media screen and (min-width: 981px) { .section-membership { padding-bottom: 7rem !important; padding-top: 6.5rem !important; } }
@@ -1728,5 +1716,51 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 @media screen and (max-width: 767px) { .section-blog .et_pb_post.blog .button, .section-blog .et_pb_post.blogs .button { font-size: 1.4rem; } }
 
 .section-blog .et_pb_post.blog .button:after, .section-blog .et_pb_post.blogs .button:after { right: 0; }
+
+.section-contact .et_pb_login { background: #ddbb58; display: -webkit-flex !important; display: -ms-flexbox !important; display: flex !important; -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; height: 67rem; margin-bottom: 0; max-width: 52rem; padding: 12rem 3.8% 5.5rem; position: relative; }
+
+@media screen and (max-width: 980px) { .section-contact .et_pb_login { height: 55rem; padding-top: 8rem; } }
+
+@media screen and (max-width: 320px) { .section-contact .et_pb_login { height: 45rem; padding-top: 5rem; } }
+
+@media screen and (min-width: 981px) { .section-contact .et_pb_login { -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; min-width: 32.5rem; width: 40%; } }
+
+@media screen and (max-width: 980px) { .section-contact .et_pb_login { margin: auto; } }
+
+.section-contact .et_pb_login:before { background: #000; bottom: 0; content: ''; height: 46.2rem; left: -1.1rem; margin: auto; position: absolute; top: 0; width: 1.1rem; }
+
+@media screen and (max-width: 980px) { .section-contact .et_pb_login:before { content: none; } }
+
+.section-contact .et_pb_login .et_pb_newsletter_description, .section-contact .et_pb_login .et_pb_forgot_password { color: #010101; font-size: 2.2rem; line-height: 1.4; width: 100%; }
+
+@media screen and (max-width: 320px) { .section-contact .et_pb_login .et_pb_newsletter_description, .section-contact .et_pb_login .et_pb_forgot_password { font-size: 1.8rem; } }
+
+.section-contact .et_pb_login .et_pb_newsletter_description a, .section-contact .et_pb_login .et_pb_forgot_password a { color: #010101; display: inline-block; margin-bottom: 1rem; text-decoration: underline; }
+
+.section-contact .et_pb_login .et_pb_newsletter_description a:hover, .section-contact .et_pb_login .et_pb_forgot_password a:hover { text-decoration: none; }
+
+.section-contact .et_pb_login .et_pb_login_form { padding-bottom: 8rem; padding-left: 0 !important; width: 100%; }
+
+.section-contact .et_pb_login .et_pb_login_form .et_pb_forgot_password { bottom: 0; padding-bottom: 0; position: absolute; }
+
+.section-contact .et_pb_login .et_pb_login_form .et_pb_button, .section-contact .et_pb_login .et_pb_login_form .button { margin-top: 6rem; }
+
+.section-contact .et_pb_login .et_pb_login_form .et_pb_button:hover, .section-contact .et_pb_login .et_pb_login_form .button:hover { border-color: #fff !important; color: #fff !important; }
+
+.section-contact .et_pb_login .input { background: none; border-bottom: 2px solid #fff; color: #fff; font-size: 20px; font-weight: 300; padding: 7px 5px; }
+
+.section-contact .et_pb_login .input::-webkit-input-placeholder { color: #fff; }
+
+.section-contact .et_pb_login .input:-moz-placeholder { color: #fff; }
+
+.section-contact .et_pb_login .input::-moz-placeholder { color: #fff; }
+
+.section-contact .et_pb_login .input:-ms-input-placeholder { color: #fff; }
+
+.section-contact .et_pb_login .input.et_pb_contact_message { min-height: 9rem; }
+
+.section-contact .et_pb_login .et-pb-contact-message { color: red; }
+
+.logged-in .et_pb_login .et_pb_newsletter_description_content p:first-child, .logged-in .et_pb_login .et_pb_newsletter_description_content br { display: none; }
 
 /*# sourceMappingURL=style.css.map */
