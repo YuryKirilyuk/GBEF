@@ -519,8 +519,12 @@
       flex-shrink: 0;
       max-width: 38rem;
       margin-right: 0;
+      width: 100%;
       @media screen and (max-width: 1450px) {
         max-width: 30rem;
+      }
+      img {
+        width: 100%;
       }
     }
 

@@ -54,7 +54,10 @@
     }//h3
   }//.et_pb_row:first-child
 
-  .et_pb_row:nth-child(2) {padding-top: 25px !important;}
+  .et_pb_row:nth-child(2) {
+    padding-top: 25px !important;
+    z-index: 100;
+  }
 
 
   .sorting {
@@ -136,6 +139,8 @@
         }
       }//.et_pb_team_member_description
       .et_pb_member_position ~ p {display: block;}
+      .title ~ p {display: block;}
+      .et_pb_member_social_links {display: block;}
     }//&.show
     &.align-right {
       .et_pb_team_member_description {
@@ -206,6 +211,9 @@
       padding: 0;
       ~ p {display: none;}
     }
+    .title ~ p {display: none;}
+
+    //.et_pb_member_social_links {display: none;}
 
   }//.et_pb_team_member
 

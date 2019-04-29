@@ -31,7 +31,16 @@ jQuery(window).on('load', function () {
 
 
 
+jQuery(document).ready(function($) {
+    $(".et_pb_member_social_links a").attr('target', '_blank');
+});
+
+
+
+
+
 jQuery(function(){
+
 	/* placeholder*/
     jQuery('input, textarea').each(function(){
  		var placeholder = jQuery(this).attr('placeholder');
