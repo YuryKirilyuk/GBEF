@@ -1,4 +1,5 @@
 .blog,
+.single,
 .single-blog,
 .single-blogs {
   .page-title {background-image: url(assets/img/bg_page_title.jpg);}
@@ -113,9 +114,11 @@
 .single .et_pb_post {
   margin-bottom: 0;
 }
+.single,
 .single-blog,
 .single-blogs {
   .page-title {
+    .et_pb_row {padding: 0 !important;}
     .et_pb_module {
       width: 100%;
     }
@@ -176,3 +179,20 @@
   }//.et_pb_text
 
 }//.single-blog
+
+.single-post {
+  .post-meta {
+    margin-bottom: 5rem;
+  }
+}//.single-post
+
+.single-post {
+  .page-title h1:first-child {
+    display: none;
+  }
+}
+.single-blog {
+  .page-title h1:nth-child(2) {
+    display: none;
+  }
+}

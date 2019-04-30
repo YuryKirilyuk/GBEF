@@ -8,7 +8,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 ?>
 
-<div id="main-content" class="test22">
+<div id="main-content">
 
     <div class="et_pb_section page-title et_pb_with_background et_section_regular">
         <div class="et_pb_row">
@@ -16,6 +16,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
                 <div class="et_pb_module et_pb_text et_pb_bg_layout_light  et_pb_text_align_left">
                     <div class="et_pb_text_inner">
                         <h1 class="entry-title">Blog</h1>
+                        <h1 class="entry-title">News and Updates</h1>
                     </div>
                 </div> <!-- .et_pb_text -->
             </div> <!-- .et_pb_column -->
