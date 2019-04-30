@@ -41,7 +41,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
             <div class="post-info">
 
                 <div class="post-meta">
-                    Posted at <?php echo get_post_time('h-i'); ?> in <?php the_category(); ?> by <?php the_author(); ?>
+                    Posted at <?php echo get_post_time('h-i'); ?> in <?php the_category(); ?> <!--by <?php the_author(); ?> -->
                 </div>
 
                 <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
