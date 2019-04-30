@@ -630,9 +630,9 @@
 
 .section-subscribe {
   .et_pb_contact_main_title {
-    color: #fff;
-    font-size: 3.5rem;
-    font-weight: 400;
+    color: #fff !important;
+    font-size: 3.5rem !important;
+    font-weight: 400 !important;
     line-height: 1.2;
     opacity: .9;
     @media screen and (max-width: 700px) {
@@ -670,10 +670,14 @@
       }
     }
     .et_pb_contact_submit {
-      border-color: #fff;
-      color: #fff;
+      border-color: #fff !important;
+      color: #fff !important;
       height: 62px;
       font-weight: 500;
+      &:hover {
+        border-color: $yellow !important;
+        color: $yellow !important;
+      }
       @media screen and (max-width: 1023px) {
         margin-left: 0;
         width: 100%;
