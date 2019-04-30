@@ -101,6 +101,8 @@ jQuery(function(){
             slidesToShow: 1,
             slidesToScroll: 1,
             fade: true,
+            autoplay: true,
+            autoplaySpeed: 15000,
             prevArrow: '<button type="button" class="slick-prev"></button>',
             nextArrow: '<button type="button" class="slick-next"></button>',
             appendArrows: jQuery('.member-spot-slider-arrows')

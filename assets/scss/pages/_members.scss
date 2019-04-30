@@ -158,9 +158,13 @@
       float: none;
       margin-bottom: 0;
       margin-right: 0;
+      max-height: 23rem;
       max-width: 100%;
+      overflow: hidden;
       img {
+        height: 100%;
         filter: grayscale(100%);
+        object-fit: cover;
         transition: $default-transition;
       }
     }
@@ -213,7 +217,7 @@
     }
     .title ~ p {display: none;}
 
-    //.et_pb_member_social_links {display: none;}
+    .et_pb_member_social_links {display: none;}
 
   }//.et_pb_team_member
 

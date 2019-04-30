@@ -524,9 +524,14 @@
         max-width: 30rem;
       }
       img {
+        filter: grayscale(100%);
+        transition: $default-transition;
         width: 100%;
+        &:hover {
+          filter: grayscale(0);
+        }
       }
-    }
+    }//.et_pb_team_member_image
 
     .et_pb_team_member_description {
       background: #ddbb58;

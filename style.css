@@ -908,7 +908,9 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 1450px) { .section-member-spotlight .et_pb_team_member .et_pb_team_member_image { max-width: 30rem; } }
 
-.section-member-spotlight .et_pb_team_member .et_pb_team_member_image img { width: 100%; }
+.section-member-spotlight .et_pb_team_member .et_pb_team_member_image img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: all 0.2s linear; width: 100%; }
+
+.section-member-spotlight .et_pb_team_member .et_pb_team_member_image img:hover { -webkit-filter: grayscale(0); filter: grayscale(0); }
 
 .section-member-spotlight .et_pb_team_member .et_pb_team_member_description { background: #ddbb58; color: #010101; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-flex: 1; -ms-flex: 1; flex: 1; font-size: 2rem; font-weight: 300; max-width: 47.5rem; min-height: 64.5rem; line-height: 1.4; padding: 9rem 7% 7.2rem; }
 
@@ -1633,9 +1635,9 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-members .et_pb_team_member:hover .et_pb_team_member_image img { -webkit-filter: grayscale(0); filter: grayscale(0); }
 
-.section-members .et_pb_team_member .et_pb_team_member_image { cursor: pointer; display: block; float: none; margin-bottom: 0; margin-right: 0; max-width: 100%; }
+.section-members .et_pb_team_member .et_pb_team_member_image { cursor: pointer; display: block; float: none; margin-bottom: 0; margin-right: 0; max-height: 23rem; max-width: 100%; overflow: hidden; }
 
-.section-members .et_pb_team_member .et_pb_team_member_image img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: all 0.2s linear; }
+.section-members .et_pb_team_member .et_pb_team_member_image img { height: 100%; -webkit-filter: grayscale(100%); filter: grayscale(100%); -o-object-fit: cover; object-fit: cover; transition: all 0.2s linear; }
 
 .section-members .et_pb_team_member .et_pb_team_member_description { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding-bottom: 2rem; padding-right: 3rem; padding-top: 3.5rem; }
 
@@ -1660,6 +1662,8 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 .section-members .et_pb_team_member .et_pb_member_position ~ p { display: none; }
 
 .section-members .et_pb_team_member .title ~ p { display: none; }
+
+.section-members .et_pb_team_member .et_pb_member_social_links { display: none; }
 
 .section-members .toggle-button { bottom: 0; cursor: pointer; height: 5rem; left: 0; position: absolute; transition: all .2s ease-in; width: 5rem; }
 
