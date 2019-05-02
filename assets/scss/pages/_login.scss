@@ -60,6 +60,7 @@
         color: $black;
         display: inline-block;
         margin-bottom: 1rem;
+        pointer-events: none;
         text-decoration: underline;
         &:hover {text-decoration: none;}
       }
@@ -75,6 +76,7 @@
       }
       .et_pb_button {
         margin-top: 6rem;
+        pointer-events: none;
         &:hover {
           border-color: #fff !important;
           color: #fff !important;

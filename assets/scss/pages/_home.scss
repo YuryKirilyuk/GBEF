@@ -147,12 +147,16 @@
     margin-bottom: 3rem !important;
     margin-right: 0 !important;
     max-width: 294px;
+    transition: $default-transition;
     @media screen and (min-width: 681px) {
       min-width: 294px;
     }
     @media screen and (max-width: 580px) {
       max-width: 294px;
       width: 47.25%!important;
+    }
+    &:hover {
+      box-shadow: 0 0 20px -5px rgba(0,0,0,.3);
     }
     .et_pb_module {
       background: #fff;

@@ -111,9 +111,13 @@
 
 }//.section-blog
 
-.single .et_pb_post {
-  margin-bottom: 0;
+.single {
+  .et_pb_post {
+    margin-bottom: 0;
+  }
+  .et_pb_button:after {background: $yellow;}
 }
+
 .single,
 .single-blog,
 .single-blogs {
@@ -129,17 +133,30 @@
       text-transform: uppercase !important;
     }
   }//.page-title
+
   .et_post_meta_wrapper {
     margin: auto;
     max-width: 130rem;
     width: 80%;
     a:hover {color: $black;}
   }
+
   .post-categories {
     display: inline-block;
   }
 
-  .entry-content a:hover {color: $black;}
+  .entry-content {
+    margin: auto;
+    max-width: 130rem;
+    width: 80%;
+    .et_pb_button {
+      margin-bottom: 5rem;
+    }
+    a {
+      color: darken($yellow, 10%);
+      &:hover {color: $black;}
+    }
+  }
 
   .et_pb_post {
     background-image: url(assets/img/bg_resources1.jpg),

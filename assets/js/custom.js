@@ -160,6 +160,14 @@ function hideForm(e) {
 
 
 
+
+    //Sorting
+
+    jQuery('.et_pb_team_member').each(function(){
+
+    });
+
+
 });
 
 function showPopup() {

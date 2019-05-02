@@ -1,5 +1,6 @@
 .et_pb_button {
   min-width: 20.5rem;
+  text-align: center;
   @media screen and (max-width: 1100px) {letter-spacing: 2px !important;}
   @media screen and (max-width: 480px) {
     font-size: 1.8rem !important;
@@ -9,6 +10,7 @@
     font-size: 1.4rem !important;
     height: 5.4rem !important;
     line-height: 1.5 !important;
+    line-height: 3.4 !important;
   }
   &:after {
     background: #fff;
