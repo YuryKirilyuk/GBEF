@@ -147,13 +147,14 @@
 
   .entry-content {
     margin: auto;
-    max-width: 130rem;
-    width: 80%;
+    //max-width: 130rem;
+    //width: 80%;
+    //.et_pb_row {width: 100%;}
     .et_pb_button {
       margin-bottom: 5rem;
     }
     a {
-      color: darken($yellow, 10%);
+      color: #c59300;
       &:hover {color: $black;}
     }
   }
@@ -204,6 +205,8 @@
   }//.et_pb_text
 
 }//.single-blog
+
+.et_pb_pagebuilder_layout.single-post #page-container .et_pb_row {width: 80%;}
 
 .single-post {
   .post-meta {

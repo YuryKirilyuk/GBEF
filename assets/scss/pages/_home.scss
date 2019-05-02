@@ -745,9 +745,12 @@
     }
 
     .et_pb_module {
+      align-items: center;
       background: #fff;
       box-shadow: 15px 0 51px rgba(34,30,31,.21);
-      padding: 6.8rem 5.5rem 9rem;
+      display: flex;
+      min-height: 35rem;
+      padding: 6.8rem 5.5rem;
       @media screen and (max-width: 1283px) {
         padding: 6rem 3rem 7rem;
       }
@@ -763,7 +766,7 @@
         font-size: 3.13rem;
         font-weight: 700;
         line-height: 1.32;
-        margin-bottom: 3rem;
+        //margin-bottom: 3rem;
         text-transform: none;
         @media screen and (max-width: 1283px) and (min-width: 981px) {
           font-size: 2.5rem;
@@ -777,12 +780,12 @@
       }
       a {
         color: $yellow;
-        display: inline-block;
-        font-size: 1.6rem;
-        font-weight: 500;
-        letter-spacing: 5px;
+        //display: inline-block;
+        //font-size: 1.6rem;
+        //font-weight: 500;
+        //letter-spacing: 5px;
         position: relative;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         &:hover {
           color: $black;
           &:after {background: $black;}
@@ -790,7 +793,7 @@
         &:after {
           background: $yellow;
           bottom: 0;
-          content: '';
+          //content: '';
           height: 2px;
           margin: auto;
           position: absolute;
@@ -804,14 +807,29 @@
   }// .event-info
 
   .persons-list {
+
     @media screen and (min-width: 981px) {
-      padding: 0;
-      top: -4.2rem;
+      //padding: 0;
+      //top: -4.2rem;
     }
 
     .et_pb_column {
       display: flex;
+      justify-content: flex-end;
     }
+
+    .et_pb_button {
+      @media screen and (min-width: 1601px) {
+        padding-top: 6.5rem;
+        transform: translateX(-19.5rem);
+      }
+      @media screen and (max-width: 1600px) and (min-width: 1283px) {
+        padding-top: 6.5rem;
+        transform: translateX(-8.5rem);
+      }
+      &:after {background: $yellow;}
+    }//.et_pb_button
+
     .et_pb_team_member {
       margin-right: 1.7rem;
       width: 13.4rem;

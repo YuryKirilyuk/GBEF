@@ -17,6 +17,8 @@
     .et-social-icon {
       margin-top: 5px;
       margin-bottom: 5px;
+      &:first-child {
+        margin-left: 0;}
       a {
         align-items: center;
         background: #404040;
