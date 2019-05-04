@@ -164,6 +164,7 @@ function hideForm(e) {
     jQuery('.et_pb_team_member').each(function(){
         var $teamMember = jQuery(this),
             name = $teamMember.find('.et_pb_module_header').text(),
+            company = $teamMember.find('.title').text(),
             arr = name.replace(/\s/g," ");
 
         arr = arr.split(" ");
@@ -172,6 +173,7 @@ function hideForm(e) {
         } else {
             $teamMember.attr('data-name', '');
         }
+        $teamMember.attr('data-company', company);
 
     });
     //sorting by attributes data-name, data-company
@@ -182,8 +184,8 @@ function hideForm(e) {
         });
 
         jQuery('.sort-company').on('click', function(){
-            tinysort('#executive-members .et_pb_team_member',{data:'name', order:'desc'});
-            tinysort('#general-members .et_pb_team_member',{data:'name', order:'desc'});
+            tinysort('#executive-members .et_pb_team_member',{data:'company'});
+            tinysort('#general-members .et_pb_team_member',{data:'company'});
         });
     }
 
