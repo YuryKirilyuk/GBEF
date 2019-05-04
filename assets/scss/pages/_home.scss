@@ -107,7 +107,7 @@
 .section-info-box {
   @media screen and (min-width: 769px) {
     background-color: transparent;
-    background-position: bottom 110px right !important;
+    background-position: bottom 130px right !important;
     padding-bottom: 2rem !important;
     padding-top: 0 !important;
   }
@@ -256,7 +256,7 @@
 
 .section-executive-members {
   @media screen and (min-width: 981px) {
-    background-position: top center;
+    background-position: -60px top;
     padding-top: 50px !important;
   }
   @media screen and (max-width: 980px) {
@@ -406,6 +406,10 @@
 
 
 .section-become-a-member {
+  @media screen and (min-width: 981px) {
+    background-color: #A7A8AC;
+    background-position: -60px top;
+  }
   height: 21.5rem;
   padding: 0 !important;
   .et_pb_row {
@@ -438,6 +442,7 @@
 
 .section-member-spotlight {
   @media screen and (min-width: 981px) {
+    background-position: -60px top !important;
     padding-top: 7.5rem !important;
   }
 
@@ -546,9 +551,15 @@
       font-size: 2rem;
       font-weight: 300;
       max-width: 47.5rem;
-      min-height: 64.5rem;
+      //min-height: 64.5rem;
       line-height: 1.4;
-      padding: 9rem 7% 7.2rem;
+      //padding: 9rem 7% 7.2rem;
+      padding: 2rem 7%;
+      justify-content: center;
+      min-height: 47rem;
+      @media screen and (min-width: 981px) {
+        height: 64.5rem;
+      }
       @media screen and (max-width: 1450px) {
         font-size: 1.8rem;
         min-height: 54.5rem;
@@ -593,7 +604,7 @@
         }
       }
 
-      p:last-child {margin-top: auto;}
+      //p:last-child {margin-top: auto;}
 
       a {
         color: #fff;
@@ -718,6 +729,12 @@
       }
 
     }//@media screen and (min-width: 981px)
+
+    .et_pb_column {
+      @media screen and (max-width: 980px) {
+        margin-bottom: 0;
+      }
+    }
   }//.et_pb_row
 
 
@@ -743,6 +760,9 @@
       padding-top: 6.5rem;
       transform: translateX(-8.5rem);
     }
+    @media screen and (max-width: 980px) {
+      padding-top: 0;
+    }
 
     .et_pb_module {
       align-items: center;
@@ -767,6 +787,7 @@
         font-weight: 700;
         line-height: 1.32;
         //margin-bottom: 3rem;
+        padding-bottom: 0;
         text-transform: none;
         @media screen and (max-width: 1283px) and (min-width: 981px) {
           font-size: 2.5rem;
@@ -819,6 +840,13 @@
     }
 
     .et_pb_button {
+      border: none;
+      color: $yellow;
+      padding: 5px 0 !important;
+      &:hover {
+        color: $black !important;
+        &:after {background: $black;}
+      }
       @media screen and (min-width: 1601px) {
         padding-top: 6.5rem;
         transform: translateX(-19.5rem);
@@ -827,7 +855,10 @@
         padding-top: 6.5rem;
         transform: translateX(-8.5rem);
       }
-      &:after {background: $yellow;}
+      &:after {
+        background: $yellow;
+        height: 3px;
+      }
     }//.et_pb_button
 
     .et_pb_team_member {

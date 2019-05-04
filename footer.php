@@ -64,6 +64,8 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 	<?php wp_footer(); ?>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/3.2.5/tinysort.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory');?>/assets/js/slick.min.js" ></script>
     <script src="<?php bloginfo('stylesheet_directory');?>/assets/js/custom.js" ></script>
 

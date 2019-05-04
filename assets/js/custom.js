@@ -143,7 +143,8 @@ function hideForm(e) {
 }
 
 
-    jQuery('.section-members .et_pb_column').append('<div class="et_pb_team_member empty"></div><div class="et_pb_team_member empty"></div>');
+    jQuery('.section-members div[id$="members"] .et_pb_column')
+        .append('<div class="et_pb_team_member empty"></div><div class="et_pb_team_member empty"></div>');
     jQuery('.section-members .et_pb_team_member_image ').each(function (){
         jQuery(this).append('<div class="toggle-button"></div>');
     });
@@ -158,14 +159,33 @@ function hideForm(e) {
         jQuery(this).addClass('active').siblings().removeClass('active');
     });
 
-
-
-
-    //Sorting
-
+    //SORTING
+    //Setting attribute data-name
     jQuery('.et_pb_team_member').each(function(){
+        var $teamMember = jQuery(this),
+            name = $teamMember.find('.et_pb_module_header').text(),
+            arr = name.replace(/\s/g," ");
+
+        arr = arr.split(" ");
+        if(arr.length > 1) {
+            $teamMember.attr('data-name', arr.pop());
+        } else {
+            $teamMember.attr('data-name', '');
+        }
 
     });
+    //sorting by attributes data-name, data-company
+    if(jQuery('.section-members').length) {
+        jQuery('.sort-name').on('click', function(){
+            tinysort('#executive-members .et_pb_team_member',{data:'name'});
+            tinysort('#general-members .et_pb_team_member',{data:'name'});
+        });
+
+        jQuery('.sort-company').on('click', function(){
+            tinysort('#executive-members .et_pb_team_member',{data:'name', order:'desc'});
+            tinysort('#general-members .et_pb_team_member',{data:'name', order:'desc'});
+        });
+    }
 
 
 });

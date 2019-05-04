@@ -118,7 +118,10 @@
     @media screen and (max-width: 850px) {font-size: 1.4rem;}
     @media screen and (max-width: 765px) {width: 45%;}
     @media screen and (max-width: 550px) {width: 43%;}
-    &.empty {height: 0;}
+    &.empty {
+      height: 0;
+      order: 1;
+    }
     &.show {
       .et_pb_team_member_image img {filter: grayscale(0);}
       .et_pb_team_member_description {
