@@ -102,7 +102,7 @@ jQuery(function(){
             slidesToScroll: 1,
             fade: true,
             autoplay: true,
-            autoplaySpeed: 15000,
+            autoplaySpeed: 8000,
             prevArrow: '<button type="button" class="slick-prev"></button>',
             nextArrow: '<button type="button" class="slick-next"></button>',
             appendArrows: jQuery('.member-spot-slider-arrows')
@@ -142,13 +142,12 @@ function hideForm(e) {
 
 }
 
-
+    //adding empty divs for propper last row alignment
     jQuery('.section-members div[id$="members"] .et_pb_column')
         .append('<div class="et_pb_team_member empty"></div><div class="et_pb_team_member empty"></div>');
     jQuery('.section-members .et_pb_team_member_image ').each(function (){
         jQuery(this).append('<div class="toggle-button"></div>');
     });
-    //jQuery('.toggle-button').each(showPopup);
     jQuery('.section-members .et_pb_module_header').each(showPopup);
     jQuery('.section-members .et_pb_team_member_image').each(showPopup);
 
@@ -190,6 +189,15 @@ function hideForm(e) {
     }
 
 
+    //<br> issue
+    if(jQuery('.section-leadership-team').length) {
+        jQuery('.et_pb_member_position').each(function(){
+            jQuery(this).text(jQuery(this).text().replace(",", ",\n"));
+        });
+    }
+
+
+
 });
 
 function showPopup() {
@@ -220,7 +228,7 @@ function showPopup() {
             .siblings().removeClass('show');
     });
 }
-
+//this for testing purposes
 function resetHeight() {
     jQuery('.et_pb_team_member').each(function(){
         jQuery(this).removeAttr('style');

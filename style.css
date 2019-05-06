@@ -1004,7 +1004,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 980px) { .section-next-event .event-info { padding-top: 0; } }
 
-.section-next-event .event-info .et_pb_module { -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: #fff; box-shadow: 15px 0 51px rgba(34, 30, 31, 0.21); display: -webkit-flex; display: -ms-flexbox; display: flex; min-height: 35rem; padding: 6.8rem 5.5rem; }
+.section-next-event .event-info .et_pb_module { -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: #fff; box-shadow: 15px 0 51px rgba(34, 30, 31, 0.21); display: -webkit-flex; display: -ms-flexbox; display: flex; min-height: 37rem; padding: 6.8rem 5rem; }
 
 @media screen and (max-width: 1283px) { .section-next-event .event-info .et_pb_module { padding: 6rem 3rem 7rem; } }
 
@@ -1567,7 +1567,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-leadership-team .et_pb_team_member_description h4 { font-size: 2.4rem; font-weight: 700; line-height: 1.33; margin-bottom: 1.2rem; text-transform: none; }
 
-.section-leadership-team .et_pb_team_member_description .et_pb_member_position { color: #010101; font-size: 2.2rem; line-height: 1.31; margin-bottom: 1.4rem; max-width: 65.5rem; }
+.section-leadership-team .et_pb_team_member_description .et_pb_member_position { color: #010101; font-size: 2.2rem; line-height: 1.31; margin-bottom: 1.4rem; max-width: 57rem; white-space: pre-line; }
 
 @media screen and (max-width: 480px) { .section-leadership-team .et_pb_team_member_description .et_pb_member_position { font-size: 2rem; line-height: 1.2; } }
 
