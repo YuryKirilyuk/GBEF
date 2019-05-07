@@ -1069,7 +1069,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-news-updates .post-meta { color: #7d7d7d !important; font-size: 1.6rem; line-height: 1.1; margin-bottom: 1.5rem; }
 
-.section-news-updates .post-content { color: #555; font-size: 1.7rem; font-weight: 300; line-height: 1.29; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
+.section-news-updates .post-content { color: #555; font-size: 2rem; font-weight: 300; line-height: 1.29; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
 
 @media screen and (max-width: 1300px) and (min-width: 981px) { .section-news-updates .post-content { margin-left: -12.5rem; } }
 
@@ -1368,7 +1368,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-registration + .section-text { background: url(assets/img/bg_about_text2.jpg) no-repeat left top; padding: 4.5rem 0 5.5rem !important; }
 
-.section-docs { background-image: url(assets/img/bg_resources1.jpg), url(assets/img/bg_resources2.jpg); background-position: right top, left bottom; background-size: initial; background-repeat: no-repeat; min-height: 150rem; padding-top: 4.5rem !important; }
+.section-docs { background-image: url(assets/img/bg_resources1.jpg), url(assets/img/bg_resources2.jpg); background-position: right top, left bottom; background-size: initial; background-repeat: no-repeat; padding-top: 4.5rem !important; }
 
 @media screen and (max-width: 980px) { .section-docs .et_pb_row { width: 90%; } }
 
@@ -1410,7 +1410,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-docs .button.link:after { height: 2px; right: 0; width: 1.9rem; }
 
-.section-news-and-updates { background-image: url(assets/img/bg_news_updates1.jpg), url(assets/img/bg_news_updates2.jpg); background-position: right top, left bottom; background-size: initial; background-repeat: no-repeat; min-height: 150rem; }
+.section-news-and-updates { background-image: url(assets/img/bg_news_updates1.jpg), url(assets/img/bg_news_updates2.jpg); background-position: right top, left bottom; background-size: initial; background-repeat: no-repeat; }
 
 @media screen and (max-width: 320px) { .section-news-and-updates .et_pb_row { width: 90%; } }
 
@@ -1497,7 +1497,7 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 375px) { .page-title + .section-registration .et_pb_button, .page-title + .section-registration .button { font-size: 1.2rem !important; } }
 
-.section-upcoming-events { background-image: url(assets/img/bg_upcoming_events1.jpg), url(assets/img/bg_upcoming_events2.jpg); background-position: right top, left bottom 24.5rem; background-size: initial; background-repeat: no-repeat; min-height: 120rem; color: #000; font-size: 1.9rem; line-height: 1.42; }
+.section-upcoming-events { background-image: url(assets/img/bg_upcoming_events1.jpg), url(assets/img/bg_upcoming_events2.jpg); background-position: right top, left bottom 3.5rem; background-size: initial; background-repeat: no-repeat; color: #000; font-size: 1.9rem; line-height: 1.42; }
 
 @media screen and (max-width: 320px) { .section-upcoming-events .et_pb_row { width: 90%; } }
 
@@ -1565,11 +1565,17 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 @media screen and (max-width: 480px) { .section-leadership-team .et_pb_team_member_description { font-size: 1.8rem; line-height: 1.35; } }
 
+.section-leadership-team .et_pb_team_member_description p a { color: #010101; text-decoration: underline; }
+
+.section-leadership-team .et_pb_team_member_description p a:hover { text-decoration: none; }
+
 .section-leadership-team .et_pb_team_member_description h4 { font-size: 2.4rem; font-weight: 700; line-height: 1.33; margin-bottom: 1.2rem; text-transform: none; }
 
 .section-leadership-team .et_pb_team_member_description .et_pb_member_position { color: #010101; font-size: 2.2rem; line-height: 1.31; margin-bottom: 1.4rem; max-width: 57rem; white-space: pre-line; }
 
 @media screen and (max-width: 480px) { .section-leadership-team .et_pb_team_member_description .et_pb_member_position { font-size: 2rem; line-height: 1.2; } }
+
+.section-leadership-team .et_pb_team_member_description p:not(.et_pb_member_position) br { margin-bottom: 1rem; }
 
 .section-leadership-team .et_pb_team_member_description .button.link { bottom: 6.5rem; color: #010101; font-size: 1.6rem; padding-right: 3rem; position: absolute; right: 7%; text-transform: uppercase; width: auto !important; }
 
