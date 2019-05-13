@@ -25,9 +25,9 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
             <div class="et_pb_column">
 
         <?php $loop = new WP_Query( array(  'post_type' => 'blog',
-                                        'posts_per_page' => '-1',
-                                        'orderby' => 'post_id',
-                                        'order' => 'ASC' ) ); ?>
+                                            'posts_per_page' => '-1',
+                                            'orderby' => 'post_id',
+                                            'order' => 'ASC' ) ); ?>
 
     <?php if ($loop->have_posts()) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -41,7 +41,8 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
             <div class="post-info">
 
                 <div class="post-meta">
-                    Posted at <?php echo get_post_time('h-i'); ?> in <?php the_category(); ?> <!--by <?php the_author(); ?> -->
+                    Posted at <?php echo get_post_time('h-i'); ?> on <?php echo get_the_date('F d'); ?>
+                    <!--in <?php the_category(); ?> by <?php the_author(); ?> -->
                 </div>
 
                 <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

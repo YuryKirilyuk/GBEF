@@ -103,7 +103,11 @@ h2.section-title {
       margin: auto;
       width: 80%;
       @media screen and (min-width: 981px) {
-        padding-top: 11.5rem;
+        //padding-top: 11.5rem;
+        align-items: flex-end;
+        display: flex;
+        height: 100%;
+        padding-bottom: 3rem;
       }
       @media screen and (max-width: 980px) {
         padding: 8rem 0 3rem;
@@ -113,7 +117,11 @@ h2.section-title {
 
   .et_pb_post_title {
     @media screen and (min-width: 981px) {
-      padding-top: 11.5rem;
+      //padding-top: 11.5rem;
+      align-items: flex-end;
+      display: flex;
+      height: 100%;
+      padding-bottom: 3rem;
     }
     @media screen and (max-width: 980px) {
       padding-bottom: 3rem !important;

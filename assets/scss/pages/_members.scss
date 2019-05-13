@@ -133,13 +133,12 @@
         position: absolute;
         width: calc(200% + 4rem);
         z-index: 2;
-        //@media screen and (max-width: 930px) {width: 475px;}
-        //@media screen and (max-width: 850px) {width: 60%;}
         @media screen and (max-width: 768px) {
           left: 0;
           margin-left: 0;
           width: 100%;
         }
+        img {display: block;}
       }//.et_pb_team_member_description
       .et_pb_member_position ~ p {display: block;}
       .title ~ p {display: block;}
@@ -182,7 +181,13 @@
         padding-top: 2.5rem;
         width: 100% !important;
       }
-    }
+      img {
+        display: none;
+        font-size: 11px;
+        max-width: 140px;
+        text-align: right;
+      }
+    }//.et_pb_team_member_description
 
     .et_pb_module_header {
       color: #000;
@@ -191,6 +196,9 @@
       font-weight: 700;
       margin-bottom: 8px;
       text-transform: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       @media screen and (max-width: 1100px) {font-size: 2rem;}
       @media screen and (max-width: 850px) {font-size: 1.8rem;}
     }

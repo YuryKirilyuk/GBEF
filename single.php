@@ -63,7 +63,8 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							<h1 class="entry-title"><?php the_title(); ?></h1>
 
                             <div class="post-meta">
-                                Posted at <?php echo get_post_time('h-i'); ?> on <?php echo get_the_date('F d'); ?> in <?php the_category(); ?> <!-- by <?php the_author(); ?> -->
+                                Posted at <?php echo get_post_time('h-i'); ?> on <?php echo get_the_date('F d'); ?>
+                                <!-- in <?php the_category(); ?> <!-- by <?php the_author(); ?> -->
                             </div>
 
 

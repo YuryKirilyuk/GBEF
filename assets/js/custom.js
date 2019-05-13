@@ -188,6 +188,33 @@ function hideForm(e) {
         });
     }
 
+    //company logo
+    jQuery('.et_pb_team_member .et_pb_module_header').each(function(){
+        var company = jQuery(this).siblings('.title').text();
+        //console.log(company);
+
+        if(company.indexOf('Oracle') != -1) {company = 'Oracle'};
+        if(company.indexOf('Ambit') != -1) {company = 'Ambit'};
+        if(company.indexOf('Roosevelt') != -1) {company = 'Roosevelt'};
+        if(company.indexOf('UIC') != -1) {company = 'UIC'};
+        var companyNew = company.split(' ')[0];
+        var companyNew = companyNew.split('.')[0];
+        var companyNew = companyNew.split(',')[0];
+        //console.log(companyNew);
+
+        var path = "/GBEF/wp-content/themes/gbef/assets/img/logos/logo-" + companyNew + ".png";
+        //console.log(path);
+
+        var img = "<img alt='" + company + "' src='" + path + "' />";
+        //console.log(img);
+
+        jQuery(this).append(img);
+
+
+        //jQuery(this).append('<img alt="' + company + '" src="/GBEF/wp-content/themes/gbef/assets/img/logos/logo-' + companyNew + '.png" />');
+    });
+
+
 
     //<br> issue
     if(jQuery('.section-leadership-team').length) {
