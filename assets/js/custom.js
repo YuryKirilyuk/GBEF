@@ -5,6 +5,7 @@ jQuery(window).on('load', function () {
         jQuery('body').addClass('web');
 	};
 	//$('body').removeClass('loaded');
+
 });
 
 
@@ -154,16 +155,34 @@ function hideForm(e) {
 
 
 
+
+
+    //make ankor link from member name
+    if(jQuery('#executiveMembersSlider').length) {
+        jQuery('#executiveMembersSlider .slick-slide').each(function(){
+
+            var el = jQuery(this),
+                name = el.find('.et_pb_module_header').text().toLowerCase().replace(/\s/g,""),
+                link = el.find('a'),
+                href = link.attr('href') + '#' + name;
+
+            link.attr('href', href);
+        });
+    }
+
+
+
     jQuery('.sorting span').on('click', function(){
         jQuery(this).addClass('active').siblings().removeClass('active');
     });
 
     //SORTING
-    //Setting attribute data-name
+    //Setting attributes data-name and data-company
     jQuery('.et_pb_team_member').each(function(){
         var $teamMember = jQuery(this),
             name = $teamMember.find('.et_pb_module_header').text(),
             company = $teamMember.find('.title').text(),
+            nameId = name.toLowerCase().replace(/\s/g,""),
             arr = name.replace(/\s/g," ");
 
         arr = arr.split(" ");
@@ -173,6 +192,7 @@ function hideForm(e) {
             $teamMember.attr('data-name', '');
         }
         $teamMember.attr('data-company', company);
+        $teamMember.attr('id', nameId);
 
     });
     //sorting by attributes data-name, data-company
@@ -188,7 +208,28 @@ function hideForm(e) {
         });
     }
 
-    //company logo
+
+
+    if(location.hash){
+        var id = location.hash.toLowerCase(),
+            $el = jQuery(id),
+            windowWidth = jQuery(window).width(),
+            elOffset = $el.offset(),
+            breakPoint = (windowWidth > 1024) ? windowWidth * .7 : windowWidth * .6;
+
+        jQuery(id).addClass('show').find('.et_pb_team_member_image').addClass('active');
+
+        //direction alignment of popup
+        if(breakPoint < elOffset.left) $el.addClass('align-right');
+
+        setTimeout(function(){
+            jQuery('html, body').animate({scrollTop: jQuery(location.hash).offset().top - 50}, 1000)
+        }, 1000);
+    }
+
+
+
+    //adding company logo
     jQuery('.et_pb_team_member .et_pb_module_header').each(function(){
         var company = jQuery(this).siblings('.title').text();
         //console.log(company);
@@ -197,12 +238,13 @@ function hideForm(e) {
         if(company.indexOf('Ambit') != -1) {company = 'Ambit'};
         if(company.indexOf('Roosevelt') != -1) {company = 'Roosevelt'};
         if(company.indexOf('UIC') != -1) {company = 'UIC'};
+        if(company.indexOf('CES') != -1) {company = 'CES'};
         var companyNew = company.split(' ')[0];
         var companyNew = companyNew.split('.')[0];
         var companyNew = companyNew.split(',')[0];
         //console.log(companyNew);
 
-        var path = "/GBEF/wp-content/themes/gbef/assets/img/logos/logo-" + companyNew + ".png";
+        var path = "/wp-content/themes/gbef/assets/img/logos/logo-" + companyNew + ".png";
         //console.log(path);
 
         var img = "<img alt='" + company + "' src='" + path + "' />";
@@ -210,8 +252,12 @@ function hideForm(e) {
 
         jQuery(this).append(img);
 
-
         //jQuery(this).append('<img alt="' + company + '" src="/GBEF/wp-content/themes/gbef/assets/img/logos/logo-' + companyNew + '.png" />');
+    });
+
+    //Hide broken images
+    jQuery('.et_pb_team_member .et_pb_module_header img').error(function(){
+        jQuery(this).hide();
     });
 
 
@@ -255,6 +301,21 @@ function showPopup() {
             .siblings().removeClass('show');
     });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //this for testing purposes
 function resetHeight() {
     jQuery('.et_pb_team_member').each(function(){

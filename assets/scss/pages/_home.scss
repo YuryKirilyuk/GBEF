@@ -644,7 +644,9 @@
 
 
 .section-subscribe {
-  .et_pb_contact_main_title {
+
+  .et_pb_contact_main_title,
+  .et_pb_module_header {
     color: #fff !important;
     font-size: 3.5rem !important;
     font-weight: 400 !important;
@@ -654,15 +656,43 @@
       font-size: 2.5rem;
     }
   }
-  .et_pb_contact_form {
+  .et_pb_newsletter {
+    flex-direction: column !important;
+  }
+  .et_pb_newsletter_description,
+  .et_pb_newsletter_form {
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  .et_pb_contact_form,
+  .et_pb_newsletter_form form {
     align-items: flex-end;
     display: flex;
     &:after {content: none;}
     @media screen and (max-width: 1023px) {
       flex-wrap: wrap;
     }
+    .et_pb_newsletter_fields {
+      @media screen and (min-width: 1024px) {
+        flex-wrap: nowrap;
+      }
+    }
+
     p {margin-bottom: 2rem;}
-    .input {
+
+    .et_pb_newsletter_field {
+      float: left;
+      flex-basis: 50%;
+      padding: 0 0 0 3%;
+      width: 50%;
+      @media screen and (max-width: 767px) {
+        flex-basis: 100%;
+        width: 100%;
+      }
+    }
+    .input,
+    .et_pb_newsletter_fields .input {
       background: none;
       border-bottom: 1px solid #737373 !important;
       color: #fff;
@@ -677,6 +707,7 @@
         border-bottom-color: red !important;
       }
     }//.input
+
     .et_contact_bottom_container {
       margin-bottom: 2rem;
       @media screen and (max-width: 1023px) {
@@ -684,11 +715,22 @@
         width: 50%;
       }
     }
-    .et_pb_contact_submit {
+
+    .et_pb_newsletter_button_wrap {
+      flex-basis: auto;
+      @media screen and (max-width: 1023px) {
+        flex-basis: 50%;
+        padding-left: 3%;
+      }
+    }
+    .et_pb_contact_submit,
+    .et_pb_newsletter_button {
       border-color: #fff !important;
       color: #fff !important;
       height: 62px;
       font-weight: 500;
+      margin: 0 0 0 15px;
+      width: auto;
       &:hover {
         border-color: $yellow !important;
         color: $yellow !important;
@@ -697,8 +739,14 @@
         margin-left: 0;
         width: 100%;
       }
-    }
+    }//.et_pb_contact_submit
+
+  }//.et_pb_contact_form
+
+  .et_pb_newsletter_form form {
+    margin-left: -3%;
   }
+
 }//.section-subscribe
 
 

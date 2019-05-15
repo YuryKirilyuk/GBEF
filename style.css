@@ -946,39 +946,55 @@ h2.section-title:before { background: #fff; bottom: 0; content: ''; height: 7px;
 
 .section-member-spotlight .et_pb_team_member .et_pb_team_member_description a:after { background: #fff; bottom: 0; content: ''; height: 2px; margin: auto; position: absolute; right: -4rem; top: 0; transition: all 0.2s linear; width: 20px; }
 
-.section-subscribe .et_pb_contact_main_title { color: #fff !important; font-size: 3.5rem !important; font-weight: 400 !important; line-height: 1.2; opacity: .9; }
+.section-subscribe .et_pb_contact_main_title, .section-subscribe .et_pb_module_header { color: #fff !important; font-size: 3.5rem !important; font-weight: 400 !important; line-height: 1.2; opacity: .9; }
 
-@media screen and (max-width: 700px) { .section-subscribe .et_pb_contact_main_title { font-size: 2.5rem; } }
+@media screen and (max-width: 700px) { .section-subscribe .et_pb_contact_main_title, .section-subscribe .et_pb_module_header { font-size: 2.5rem; } }
 
-.section-subscribe .et_pb_contact_form { -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.section-subscribe .et_pb_newsletter { -webkit-flex-direction: column !important; -ms-flex-direction: column !important; flex-direction: column !important; }
 
-.section-subscribe .et_pb_contact_form:after { content: none; }
+.section-subscribe .et_pb_newsletter_description, .section-subscribe .et_pb_newsletter_form { padding: 0 !important; width: 100%; }
 
-@media screen and (max-width: 1023px) { .section-subscribe .et_pb_contact_form { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+.section-subscribe .et_pb_contact_form, .section-subscribe .et_pb_newsletter_form form { -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
-.section-subscribe .et_pb_contact_form p { margin-bottom: 2rem; }
+.section-subscribe .et_pb_contact_form:after, .section-subscribe .et_pb_newsletter_form form:after { content: none; }
 
-.section-subscribe .et_pb_contact_form .input { background: none; border-bottom: 1px solid #737373 !important; color: #fff; font-size: 20px; font-weight: 300; padding-left: 7px; padding-right: 7px; }
+@media screen and (max-width: 1023px) { .section-subscribe .et_pb_contact_form, .section-subscribe .et_pb_newsletter_form form { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
 
-.section-subscribe .et_pb_contact_form .input::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.5); }
+@media screen and (min-width: 1024px) { .section-subscribe .et_pb_contact_form .et_pb_newsletter_fields, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_fields { -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; } }
 
-.section-subscribe .et_pb_contact_form .input:-moz-placeholder { color: rgba(255, 255, 255, 0.5); }
+.section-subscribe .et_pb_contact_form p, .section-subscribe .et_pb_newsletter_form form p { margin-bottom: 2rem; }
 
-.section-subscribe .et_pb_contact_form .input::-moz-placeholder { color: rgba(255, 255, 255, 0.5); }
+.section-subscribe .et_pb_contact_form .et_pb_newsletter_field, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_field { float: left; -webkit-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; padding: 0 0 0 3%; width: 50%; }
 
-.section-subscribe .et_pb_contact_form .input:-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); }
+@media screen and (max-width: 767px) { .section-subscribe .et_pb_contact_form .et_pb_newsletter_field, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_field { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; width: 100%; } }
 
-.section-subscribe .et_pb_contact_form .input.et_contact_error { border-bottom-color: red !important; }
+.section-subscribe .et_pb_contact_form .input, .section-subscribe .et_pb_contact_form .et_pb_newsletter_fields .input, .section-subscribe .et_pb_newsletter_form form .input, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_fields .input { background: none; border-bottom: 1px solid #737373 !important; color: #fff; font-size: 20px; font-weight: 300; padding-left: 7px; padding-right: 7px; }
 
-.section-subscribe .et_pb_contact_form .et_contact_bottom_container { margin-bottom: 2rem; }
+.section-subscribe .et_pb_contact_form .input::-webkit-input-placeholder, .section-subscribe .et_pb_contact_form .et_pb_newsletter_fields .input::-webkit-input-placeholder, .section-subscribe .et_pb_newsletter_form form .input::-webkit-input-placeholder, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_fields .input::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.5); }
 
-@media screen and (max-width: 1023px) { .section-subscribe .et_pb_contact_form .et_contact_bottom_container { padding-left: 3%; width: 50%; } }
+.section-subscribe .et_pb_contact_form .input:-moz-placeholder, .section-subscribe .et_pb_contact_form .et_pb_newsletter_fields .input:-moz-placeholder, .section-subscribe .et_pb_newsletter_form form .input:-moz-placeholder, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_fields .input:-moz-placeholder { color: rgba(255, 255, 255, 0.5); }
 
-.section-subscribe .et_pb_contact_form .et_pb_contact_submit { border-color: #fff !important; color: #fff !important; height: 62px; font-weight: 500; }
+.section-subscribe .et_pb_contact_form .input::-moz-placeholder, .section-subscribe .et_pb_contact_form .et_pb_newsletter_fields .input::-moz-placeholder, .section-subscribe .et_pb_newsletter_form form .input::-moz-placeholder, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_fields .input::-moz-placeholder { color: rgba(255, 255, 255, 0.5); }
 
-.section-subscribe .et_pb_contact_form .et_pb_contact_submit:hover { border-color: #ddbb58 !important; color: #ddbb58 !important; }
+.section-subscribe .et_pb_contact_form .input:-ms-input-placeholder, .section-subscribe .et_pb_contact_form .et_pb_newsletter_fields .input:-ms-input-placeholder, .section-subscribe .et_pb_newsletter_form form .input:-ms-input-placeholder, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_fields .input:-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); }
 
-@media screen and (max-width: 1023px) { .section-subscribe .et_pb_contact_form .et_pb_contact_submit { margin-left: 0; width: 100%; } }
+.section-subscribe .et_pb_contact_form .input.et_contact_error, .section-subscribe .et_pb_contact_form .et_pb_newsletter_fields .input.et_contact_error, .section-subscribe .et_pb_newsletter_form form .input.et_contact_error, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_fields .input.et_contact_error { border-bottom-color: red !important; }
+
+.section-subscribe .et_pb_contact_form .et_contact_bottom_container, .section-subscribe .et_pb_newsletter_form form .et_contact_bottom_container { margin-bottom: 2rem; }
+
+@media screen and (max-width: 1023px) { .section-subscribe .et_pb_contact_form .et_contact_bottom_container, .section-subscribe .et_pb_newsletter_form form .et_contact_bottom_container { padding-left: 3%; width: 50%; } }
+
+.section-subscribe .et_pb_contact_form .et_pb_newsletter_button_wrap, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_button_wrap { -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; }
+
+@media screen and (max-width: 1023px) { .section-subscribe .et_pb_contact_form .et_pb_newsletter_button_wrap, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_button_wrap { -webkit-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; padding-left: 3%; } }
+
+.section-subscribe .et_pb_contact_form .et_pb_contact_submit, .section-subscribe .et_pb_contact_form .et_pb_newsletter_button, .section-subscribe .et_pb_newsletter_form form .et_pb_contact_submit, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_button { border-color: #fff !important; color: #fff !important; height: 62px; font-weight: 500; margin: 0 0 0 15px; width: auto; }
+
+.section-subscribe .et_pb_contact_form .et_pb_contact_submit:hover, .section-subscribe .et_pb_contact_form .et_pb_newsletter_button:hover, .section-subscribe .et_pb_newsletter_form form .et_pb_contact_submit:hover, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_button:hover { border-color: #ddbb58 !important; color: #ddbb58 !important; }
+
+@media screen and (max-width: 1023px) { .section-subscribe .et_pb_contact_form .et_pb_contact_submit, .section-subscribe .et_pb_contact_form .et_pb_newsletter_button, .section-subscribe .et_pb_newsletter_form form .et_pb_contact_submit, .section-subscribe .et_pb_newsletter_form form .et_pb_newsletter_button { margin-left: 0; width: 100%; } }
+
+.section-subscribe .et_pb_newsletter_form form { margin-left: -3%; }
 
 @media screen and (min-width: 981px) { .section-next-event { padding-bottom: 0 !important; padding-top: 7.5rem !important; } }
 
