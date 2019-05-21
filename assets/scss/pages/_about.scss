@@ -7,15 +7,21 @@
   @media screen and (max-width: 580px) {
     font-size: 1.8rem;
   }
-
+  .et_pb_column {
+    li {margin-bottom: 1rem;}
+  }
   .et_pb_column:first-child {
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 1.16;
+    //font-size: 3rem;
+    //font-weight: 400;
+    //line-height: 1.16;
+    @media screen and (max-width: 980px) {
+      margin-bottom: 0;
+      ul {padding-bottom: 0;}
+    }
     @media screen and (max-width: 580px) {
       font-size: 2.2rem;
     }
-  }
+  }//.et_pb_column:first-child
 
   + .section-text {
     background: url(assets/img/bg_about_text1.jpg) no-repeat right top;

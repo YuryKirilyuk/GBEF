@@ -145,8 +145,35 @@ h2.section-title {
   @media screen and (max-width: 580px) {
     font-size: 1.8rem;
   }
+  ul {
+    li {margin-bottom: 1rem;}
+    ul {
+      list-style: circle;
+      padding-bottom: 0;
+      li:last-child {margin-bottom: 0;}
+    }
+  }
 }//.section-text
 
 .section-subscribe {
   background: #363636;
+}
+
+.error404 {
+  #page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    #et-main-area {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  }
+  #main-content {
+    flex: 1;
+    .container:before {
+      content: none;
+    }
+  }
 }
