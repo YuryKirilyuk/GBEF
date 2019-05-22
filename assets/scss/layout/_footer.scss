@@ -36,7 +36,7 @@
   }//.et-social-icons
 
   #footer-bottom {
-    padding-bottom: 5rem;
+    //padding-bottom: 5rem;
     padding-top: 5px;
     .container {
       //align-items: center;
@@ -104,5 +104,16 @@
 
     span {color: $yellow;}
   }//#footer-info
+
+  .lightmix {
+    padding: 0 2rem 2rem;
+    text-align: center;
+    a {
+      color: #acacac;
+      font-size: 11px;
+      transition: $default-transition;
+      &:hover {color: #fff;}
+    }
+  }
 
 }//#main-footer

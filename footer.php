@@ -55,6 +55,10 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 					</div>	<!-- .container -->
 				</div>
+
+                <div class="lightmix">
+                    <a href="https://www.lightmix.com/" target="_blank">DC Website design by LightMix</a>
+                </div>
 			</footer> <!-- #main-footer -->
 		</div> <!-- #et-main-area -->
 

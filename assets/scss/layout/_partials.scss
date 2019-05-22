@@ -145,10 +145,34 @@ h2.section-title {
   @media screen and (max-width: 580px) {
     font-size: 1.8rem;
   }
+  h1, h2 {
+    display: block;
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.6rem;
+    text-transform: none;
+  }
+  strong {font-weight: 500;}
   ul {
-    li {margin-bottom: 1rem;}
+    list-style: none;
+    li {
+      margin-bottom: 1rem;
+      padding-left: .5rem;
+      position: relative;
+      &:before {
+        background: $yellow;
+        border-radius: 50%;
+        content: '';
+        height: 7px;
+        left: -1.5rem;
+        position: absolute;
+        top: 10px;
+        width: 7px;
+      }
+    }
     ul {
-      list-style: circle;
+
       padding-bottom: 0;
       li:last-child {margin-bottom: 0;}
     }
