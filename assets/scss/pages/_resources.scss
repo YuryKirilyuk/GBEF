@@ -144,6 +144,7 @@
     font-size: 1.9rem;
     line-height: 1.42;
     margin-bottom: 5rem;
+    overflow: hidden;
     padding: 4.5rem 5.35% 6rem;
     width: 48%;
     @media screen and (max-width: 768px) {
@@ -155,6 +156,10 @@
     }
   }//.et_pb_post
 
+  .entry-featured-image-url {
+    margin: -4.5rem -14.5% 5rem;
+    @media screen and (max-width: 768px) {margin: -4.5rem -6.5% 4rem;}
+  }
   .entry-title {
     font-size: 2.4rem;
     font-weight: 700;
@@ -166,7 +171,7 @@
       font-size: 2rem;
       margin-bottom: 1rem;
     }
-  }
+  }//.entry-title
   .post-meta span {
     color: #7d7d7d;
     font-size: 1.5rem;

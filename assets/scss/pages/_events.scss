@@ -228,6 +228,34 @@
       &:hover {text-decoration: none;}
     }
   }
+  .more-link {
+    color: $yellow;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-top: 2.8rem;
+    padding-right: 4rem;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    &:hover {
+      color: $black;
+      &:after {background: $black;}
+    }
+    &:after {
+      background: $yellow;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: all 0.2s linear;
+      width: 20px;
+    }
+  }
 
   .et_pb_team_member {
     margin: 3rem 0 0;
